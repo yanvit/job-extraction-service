@@ -1,0 +1,23 @@
+🇺🇸 New York / San Francisco
+#Cloud_FinOps #USA
+
+Joblinking is looking for a Cloud FinOps Engineer to optimize cloud costs across AWS, Azure, and GCP infrastructures.
+
+Key Responsibilities:
+- Analyze cloud spending and reduce costs
+- Automate tagging, budgets, and resource optimization
+- Build financial dashboards and KPIs
+- Support cost-efficient cloud architecture
+
+Requirements:
+- 3+ years in Cloud FinOps, DevOps, or related fields
+- Experience with AWS, Azure, Kubernetes, and Datadog
+- Strong analytical skills
+- US W-2 work authorization without sponsorship
+
+What They Offer:
+- Hybrid / On-site work
+- Contract or full-time employment
+- New York or San Francisco location
+
+More details at the link below 🔽

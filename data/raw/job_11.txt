@@ -1,0 +1,66 @@
+Senior Data Scientist (LLM / Agents)
+
+Kozak Agency
+
+$$$
+
+Workload: full-time, 100% remote
+Start: ASAP
+Duration: long-term
+Format: staff augmentation
+English: strong communication skills required
+
+Project Overview
+Fintech project. The client needs a strong Senior Data Scientist with hands-on LLM experience who can own the technical stack end to end, work with leadership on data science strategy, and explain technical decisions clearly to non-technical stakeholders.
+
+What You’ll Do
+Work with leadership to shape and implement the company’s data science strategy and find opportunities to use data for business value
+Own the full technical stack needed for development and deployment
+Develop and maintain scalable ML models and systems
+Keep data management and engineering practices solid, with efficient data pipelines
+Gather requirements from cross-functional teams and provide insights
+Explain complex technical concepts to non-technical stakeholders
+
+Must-Have Requirements
+7+ years of total experience, including participating in and/or leading complex projects
+Master’s or PhD in Data Science, Computer Science, Statistics or a related field, or equivalent knowledge and experience
+Hands-on expertise in modern language models and ML frameworks
+Practical experience with different LLMs of various sizes and from different providers
+Optimizing LLM-based pipelines for performance and cost efficiency
+Building agents that work across different tools and LLMs
+LLM-based data capture and extraction
+Experience with modern LLM-supporting frameworks and tools
+Modern LLM prompting techniques
+Building evaluation pipelines using data-driven approaches
+Managing feedback and training pipelines, and fine-tuning models
+Python, R, or another strongly typed language
+Cloud platforms (AWS, GCP or Azure) and deployment processes
+Excellent communication: must confidently explain ideas and technical decisions
+
+Nice to Have
+Big data technologies (Spark, Hadoop, data warehouse / data lake technologies)
+Data architecture and database management background
+Data management and engineering tools
+Knowledge of accounting and bookkeeping
+Commitment to ethical AI practices and data governance
+
+Key Competencies
+Problem-solving and strategic thinking, ability to innovate and drive process improvements, collaboration.
+
+CV must be reworked to match the requirements above
+
+Необхідні навички
+
+Python, LLM, AWS, GCP, Azure
+
+Вимоги до володіння мовами
+
+Англійська
+
+B2 – Вище середнього
+
+Українська
+
+Носій мови
+
+Виключно | від | 7 років досвіду | Тільки віддалено | Країни ЄС | Країни, де розглядаємо кандидатів | Англійська B2 – Вище середнього | Українська Носій мови | Data Science | Зайнятість: Fulltime | Домен: Fintech | Аутстафінгова компанія | Відповідали 2 години тому

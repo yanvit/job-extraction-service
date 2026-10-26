@@ -1,0 +1,36 @@
+Senior DevOps Engineer - based in Spain only
+
+Talentuch
+
+$$$$
+
+We are looking for a Cloud Systems Specialist with strong AWS expertise and a multicloud perspective to join a global technology company.
+
+The company operates across AWS, Azure, and GCP. You will help teams select the right cloud services, maintain and continuously improve the cloud landing zone, and ensure the approved service catalog meets governance requirements.
+
+This role combines technical expertise with coordination and advisory responsibilities. You should be comfortable assessing infrastructure and validating services, while guiding project teams and improving how cloud resources are adopted and used.
+
+Required skills:
+- Stay up to date with cloud providers’ service offerings and catalogs, ensuring approved services meet governance requirements.
+- Advise project teams on the most suitable cloud services for their needs.
+- Oversee the operation of the cloud landing zone and recommend ongoing improvements.
+- Support and advise on the onboarding of new projects.
+- Contribute to cloud infrastructure automation.
+- Create and maintain guidelines, best practices, and short training materials on cloud service usage.
+- Actively participate in regular review meetings with cloud service providers.
+
+Responsibilities:
+- 3–5 years of experience in IT projects, with AWS as your primary cloud platform.
+- Multicloud knowledge covering AWS, Azure, and GCP, including each provider’s service catalog.
+- Current cloud provider certifications in Architecture, Infrastructure, DevSecOps, or Security.
+- Knowledge of cloud providers’ Cloud Adoption Frameworks.
+- Experience with multicloud management tools, such as CloudHealth.
+- Strong coordination and advisory skills, with the ability to guide project teams, oversee service governance, and serve as a trusted cloud expert.
+
+Вимоги до володіння мовами
+
+Англійська
+
+B2 – Вище середнього
+
+Виключно | від | 5 років досвіду | Тільки віддалено | Країни ЄС | Країни, де розглядаємо кандидатів | Англійська B2 – Вище середнього | DevOps | Зайнятість: Fulltime | Домен: Other | Аутстафінгова компанія | Відповідали 2 години тому

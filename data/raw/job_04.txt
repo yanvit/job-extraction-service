@@ -1,0 +1,55 @@
+C# Developer
+
+Digis (a Fiverr company)
+
+🔥
+
+$$$$
+
+About the Company
+Digis is a European IT company, part of Fiverr (NYSE: FVRR), with 250+ specialists delivering high-load SaaS platforms, enterprise solutions, and cloud-native products worldwide. We build long-term engineering teams and ensure transparency, stability, and professional growth for every talent.
+About the Project
+An established international technology platform that processes large volumes of real-time data and transforms complex information into intuitive, high-performance desktop applications.
+The product is actively evolving, with new features, advanced visualization capabilities, and integrations being continuously introduced. We are looking for a C# Developer who enjoys building sophisticated desktop interfaces and solving challenging UI performance problems.
+This is an opportunity to take ownership of desktop UI development, influence product decisions, and work closely with the CTO and experienced engineers on a mature, actively growing product.
+Responsibilities
+- Develop and enhance high-performance desktop applications using C#.
+- Develop and implement intuitive, responsive desktop interfaces.
+- Build interactive dashboards and advanced real-time data visualizations.
+- Integrate live data streams and optimize UI performance.
+- Collaborate with the engineering team to develop new features and improve the user experience.
+
+Requirements
+- 3+ years of C#/.NET development experience.
+- 1+ year of WPF desktop development experience.
+- Hands-on experience with real-time data visualization or dynamic UI development.
+- English: B2 level or higher.
+
+What We Offer
+- Work on an established international product with complex technical challenges.
+- Take ownership of desktop UI development and influence product decisions.
+- Gain hands-on experience with real-time data processing and advanced visualization.
+- Collaborate directly with the CTO and experienced engineers.
+- Fully remote work with flexible working hours.
+- Long-term cooperation and professional growth.
+- Competitive compensation and benefits.
+
+We welcome applications from candidates who believe their experience and skills could bring value to our team.
+
+Необхідний досвід з навичками
+
+WPF
+
+1 рік
+
+C#
+
+3 роки
+
+Вимоги до володіння мовами
+
+Англійська
+
+B2 – Вище середнього
+
+Виключно | від | 3 років досвіду | Тільки віддалено | Весь світ | Країни, де розглядаємо кандидатів | Англійська B2 – Вище середнього | C# / .NET | WPF | 1 рік | C# | 3 роки | Зайнятість: Fulltime | Домен: Other | Аутстафінгова компанія

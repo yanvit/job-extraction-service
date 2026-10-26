@@ -1,0 +1,49 @@
+Java Team Lead (team lead experience 3+years)
+
+Luxoft
+
+🔥
+
+$$$$
+
+Project Description:
+We are rewriting an existing enterprise platform that supports critical business operations. The new system is being built with Angular, Java, and Spring. You will join an Agile team focused on designing a modern architecture and delivering a faster, more stable, and scalable solution.
+
+Responsibilities:
+Lead the team
+Design and develop scalable Java application
+Write clean, testable, and maintainable code
+Participate in architecture and technical decisions
+Conduct code reviews and mentor junior developers
+Optimize application performance and reliability
+Collaborate with product, QA, and DevOps teams
+Troubleshoot and resolve production issues
+
+Mandatory Skills Description:
+Team lead experience 3+ years
+10+ years of Java experience (Java 11+)
+Strong knowledge of Spring Boot
+Experience with SQL databases
+Familiarity with Kafka or RabbitMQ
+Hands-on experience with Docker, Kubernetes, and cloud platforms
+Solid testing skills (JUnit, Mockito)
+Ability to mentor others and work in Agile teams
+
+Languages:
+English: B2 Upper Intermediate
+
+Необхідні навички
+
+Spring Boot, SQL початковий рівень, Team Leadership
+
+Вимоги до володіння мовами
+
+Англійська
+
+B2 – Вище середнього
+
+Українська
+
+B2 – Вище середнього
+
+Виключно | від | 10 років досвіду | Тільки віддалено | Україна | Країни, де розглядаємо кандидатів | Англійська B2 – Вище середнього | Українська B2 – Вище середнього | Java | Зайнятість: Fulltime | Домен: Fintech | Сервісна компанія | Є тестове завдання | Відповідали 2 години тому

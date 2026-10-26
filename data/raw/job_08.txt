@@ -1,0 +1,59 @@
+Junior Frontend Developer
+
+TenThousand
+
+$
+
+TenThousand is a Ukrainian engineering company that has been developing solutions for Fintech and Retail clients in the US, Israel, and Europe since 2021. Our client base includes banks, fintech companies, and logistics services. We tackle complex technical challenges—such as high-risk projects or those involving legacy architecture—and transform them into reliable, scalable, and stable systems. We work on real commercial projects, applying a product-oriented approach and adhering to high standards of quality and security.
+
+We run our own free 3-month academy and are currently looking to add 5 developers to our team for a remote role.
+
+What you’ll be doing:
+• Developing features for real commercial projects for clients in the US, Israel, and Europe
+• Working in a team under the guidance of a lead from day one
+• Developing your technical skills in an environment that upholds real product standards
+
+Requirements:
+• Solid knowledge of React, JavaScript, and TypeScript
+• Willingness to learn quickly and adopt new approaches
+• Responsibility, initiative, and self-organization
+• English proficiency at B1+ level (for working with documentation and basic communication)
+
+What we offer:
+• Involvement in real projects from the very first weeks
+• Free 3-month internal academy and mentorship
+• Systematic professional development and career growth within the company
+• Remote work format | Office-based work
+
+Selection stages:
+1 HR interview — introduction, motivation, soft skills (20–30 min)
+2 Technical assignment or interview with the lead
+3 Discussion with the project lead → job offer
+
+Необхідний досвід з навичками
+
+JavaScript
+
+1 рік
+
+React.js
+
+1 рік
+
+TypeScript
+
+6 місяців
+
+Git, CSS
+
+Вимоги до володіння мовами
+
+Англійська
+
+B1 – Середній
+
+Українська
+
+Носій мови
+
+від | 1 року досвіду | Також розглядаємо без досвіду | Тільки віддалено | Україна | Країни, де розглядаємо кандидатів | Англійська B1 – Середній | Українська Носій мови | JavaScript / Front-End | JavaScript | 1 рік | React.js | 1 рік | TypeScript | 6 місяців | Зайнятість: Fulltime | Домен: Fintech | Агенція | Активність рекрутера: Низька | Відповідали 9 годин тому

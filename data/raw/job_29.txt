@@ -1,0 +1,22 @@
+🇺🇦 Kyiv
+#Rust_Developer #Київ
+
+Quantum Systems Ukraine is seeking a Core Developer (Rust/C++) for Swarm Robotics & Sensor Control.
+
+Main responsibilities:
+- Develop swarm control and sensor systems
+- Implement real-time communication protocols
+- Optimize system performance and reliability
+
+Requirements:
+- 5+ years of backend development experience
+- Proficiency in Rust and C++
+- Experience with distributed systems
+- Knowledge of networking and multithreading
+
+We offer:
+- Full-time office work in Kyiv region
+- Shuttle service from the nearest metro station
+- Professional growth opportunities
+
+Details by the link below 🔽

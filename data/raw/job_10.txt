@@ -1,0 +1,63 @@
+Middle Game QA Engineer (PC Games)
+
+osirisai
+
+Швидко Відповідає
+
+$$
+
+🪖 DefTech
+
+Продуктова компанія
+
+Responsibilities
+
+- Functional, regression, smoke, and exploratory testing of PC game builds
+- Testing gameplay, controls, physics, UI/UX, performance, and stability
+- Creating and maintaining test cases, checklists, and test documentation
+- Writing clear bug reports with reproduction steps, logs, screenshots, and videos
+- Verifying fixes and ensuring quality before releases
+- Contributing to the implementation and growth of test automation
+
+Requirements
+
+- Ukrainian citizenship
+- 2+ years of QA experience
+- Experience testing PC games
+- You’re an active PC gamer with a good understanding of games
+- Experience playing and testing with gamepads
+- Upper-Intermediate English
+- Independence: the ability to set up the testing process yourself, prioritize, and see tasks through without constant supervision
+- Understanding of the software development lifecycle and testing types
+- Experience with bug trackers (Jira, YouTrack, or similar)
+- Strong attention to detail and the ability to describe issues clearly
+- Confident PC user with an understanding of hardware and basic system settings
+
+Nice to Have
+
+- Test automation experience (Unreal Automation Framework, Gauntlet, Python, C#, or C++)
+- Experience with drones, quadcopters, FPV, or flight simulators, or a solid understanding of how they fly and are controlled
+- Experience testing with specialized controllers (e.g., drone radio transmitters)
+- Experience with version control systems (Perforce, Git)
+
+Work Format
+
+- Remote. Candidates based in Kraków are a plus, as occasional office visits for work purposes may be needed
+
+Необхідний досвід роботи в галузі
+
+Gamedev
+
+2 роки
+
+Вимоги до володіння мовами
+
+Англійська
+
+B2 – Вище середнього
+
+Українська
+
+B1 – Середній
+
+Виключно | від | 2 років досвіду | Офіс, Віддалена робота, Гібридний формат роботи | Країни Європи та Україна | Країни, де розглядаємо кандидатів | Англійська B2 – Вище середнього | Українська B1 – Середній | QA Manual | Зайнятість: Fulltime | Домен: DefTech | Продуктова компанія | Офіс: | Хорватія

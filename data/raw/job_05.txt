@@ -1,0 +1,65 @@
+Junior DevOps Engineer
+
+RedCore
+
+🔥
+
+$
+
+Продуктова компанія
+
+RedCore is an international business group that creates technological solutions for digital markets. Our products and services cover fintech, marketing, e-commerce, customer service, communications, and regulatory technologies.
+We are looking for a Junior DevOps Engineer!
+Requirements:
+- Linux Administrator experience of 2 year or more
+- Knowledge/understanding of network operation (tcp/ip, protocols: http/https, principles of DNS operation).
+- Linux/CLI – installation, configuration.
+- Nginx proxying.
+- Monitoring:Prometheus,Grafana stack (configuration, support,dashboards),LogQA language
+- DB: MongoDB, Postgresql, ClickHouse – installation, support, clustering.
+- Understanding of CI/CD principles
+- Understanding the principles of working with terraform and ansible
+- Git (understanding how branching works, knowledge of various gitflows).
+- Experience work with cloud platforms AWS, GCP
+- Experience work with Kubernetes(EKS), Docker, Bash/Python scripts (the ability to write simple scripts to automate routine tasks)
+
+Will be plus:
+- Cloudflare (Custom Hostnames, DNS, WAF) or other CDN.
+- Experience with Nats
+- Experience with Redis
+- Experience with Jira
+
+Responsibilities:
+- Monitoring and maintaining current infrastructure as part of the DutyOps team’s responsibilities
+- Troubleshooting infrastructure issues and failures using runbooks provided to the team DutyOps
+- Monitoring traffic delivery to the product via mirrors and its recovery in case of failure within the scope of the responsibilities of the DutyOps team
+- Communication with other teams when resolving infrastructure incidents in SOS channels according to the authority of the DutyOps team
+- Optimization of the processes of performance of the tasks assigned to the team DutyOps
+Our benefits to you:
+
+- ☘️An exciting and challenging job in a fast-growing business group, the opportunity to be part of a multicultural team of top professionals in Development, Architecture, Management, Operations, Marketing, Legal, Finance, and more
+- 🤝🏻Great working atmosphere with passionate experts and leaders, sharing a friendly culture and a success-driven mindset is guaranteed
+- 🧑🏻‍💻Modern corporate equipment based on macOS or Windows and additional equipment are provided
+- 🏖Paid vacations, sick leave, personal events days, days off
+- 💵Referral program — enjoy cooperation with your colleagues and get the bonus
+- 📚Educational programs: regular internal training sessions, compensation for external education, attendance of specialized global conferences
+- 🎯Rewards program for mentoring and coaching colleagues
+- ✈️In-house Travel Service
+- 🦄Multiple internal activities: online platform for employees with quests, gamification, presents and news, clubs for movie / book / pets lovers and more
+- 🎳Other benefits could be added based on your location
+
+Необхідні навички
+
+Linux, AWS, Docker, CI/CD, Kubernetes
+
+Вимоги до володіння мовами
+
+Англійська
+
+B1 – Середній
+
+Українська
+
+Носій мови
+
+Виключно | від | 2 років досвіду | Тільки віддалено | Країни ЄС | Країни, де розглядаємо кандидатів | Англійська B1 – Середній | Українська Носій мови | DevOps | Зайнятість: Fulltime | Домен: Other | Продуктова компанія
