@@ -50,7 +50,10 @@ class AnthropicClient(LLMClient):
     def __init__(self, model: str, api_key: str | None = None, structured_mode: str = "json_schema",
                  supports_sampling: bool = True, sdk_client=None, **kw):
         super().__init__(model, **kw)
-        self.structured_mode = structured_mode      # "json_schema" (з fallback) | "tool"
+        if structured_mode not in ("auto", "json_schema", "tool"):
+            raise ValueError(f"structured_mode must be auto|json_schema|tool, got {structured_mode!r}")
+        # "auto" = почати з нативної JSON Schema і при відмові API один раз перейти на tool use
+        self.structured_mode = "json_schema" if structured_mode == "auto" else structured_mode
         self.supports_sampling = supports_sampling
         self._drop_top_p = False
         if sdk_client is not None:                  # для тестів
