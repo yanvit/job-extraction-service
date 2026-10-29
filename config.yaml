@@ -1,0 +1,48 @@
+# Конфіг експериментів. Усе, що впливає на результат, — тут, а не в коді.
+paths:
+  data_dir: data/raw
+  golden: data/golden.jsonl
+  results_dir: results
+
+defaults:
+  timeout_s: 60          # таймаут одного HTTP-виклику
+  max_retries: 3         # повтори на таймаут / 429 / 5xx (експоненційний backoff)
+  backoff_base_s: 1.0
+  max_tokens: 2048
+  concurrency: 4         # паралельні запити для провайдерських моделей (локальна — завжди 1)
+
+models:
+  - id: claude-haiku-5-5            # основна провайдерська модель
+    provider: anthropic
+    model: claude-haiku-5-5
+    structured_mode: auto            # json_schema (output_config.format) з fallback на tool use
+    supports_sampling: false         # Haiku 5.5 не приймає temperature/top_p — див. REPORT.md
+    price_per_mtok: {input: 0.10, output: 0.50}
+
+  - id: claude-haiku-4-5            # stretch: ще одна (legacy) дешева провайдерська модель, приймає temperature
+    provider: anthropic
+    model: claude-haiku-4-5
+    structured_mode: auto
+    supports_sampling: true
+    price_per_mtok: {input: 1.00, output: 5.00}
+
+  - id: qwen2.5-3b-local            # локальна OSS модель через Ollama
+    provider: ollama
+    model: qwen2.5:3b
+    timeout_s: 240                   # CPU/laptop: довгі тексти можуть генеруватись хвилину+
+    num_ctx: 8192
+    price_per_mtok: {input: 0.0, output: 0.0}
+
+sampling:
+  - name: t0                 # детермінований
+    temperature: 0.0
+  - name: t07_p09            # "творчий": вища температура + nucleus sampling
+    temperature: 0.7
+    top_p: 0.9
+
+experiment:
+  models: [claude-haiku-5-5, qwen2.5-3b-local, claude-haiku-4-5]
+  prompts: [v1, v2]
+  sampling: [t0, t07_p09]
+  docs: all                  # all | golden  (golden = лише 12 розмічених, швидко)
+  cache: true                # не платити двічі за той самий (модель, промпт, семплінг, текст)
