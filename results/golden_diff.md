@@ -1,0 +1,388 @@
+# Розбіжності з golden set
+
+Згенеровано `python main.py report`. Формат: поле (score): очікувалось → отримали.
+
+## claude-haiku-4-5__v1__t0
+- **job_01** (ok)
+  - `role_category` (0.00): "devops" → "management"
+  - `seniority` (0.00): "head" → "lead"
+  - `skills` (0.75): +зайве: System Administration, ISO 27001, ISO 27701, PCI DSS
+- **job_03** (ok)
+  - `seniority` (0.00): "unknown" → "middle"
+  - `skills` (0.89): −пропущено: Figma, Sketch
+- **job_07** (ok)
+  - `seniority` (0.00): "unknown" → "middle"
+  - `skills` (0.89): +зайве: GPS, IoT, Telematics
+- **job_10** (ok)
+  - `locations` (0.86): −пропущено: Croatia
+  - `skills` (0.72): +зайве: Functional Testing, Regression Testing, Smoke Testing, Exploratory Testing, Test Case Creation, Bug Reporting, Test Automation
+  - `posting_language` (0.00): "en" → "mixed"
+- **job_12** (ok)
+  - `seniority` (0.00): "unknown" → "junior"
+  - `languages` (0.00): −пропущено: uk:C2; +зайве: uk:B2
+- **job_15** (ok)
+  - `company` (0.00): null → "Національна компанія по розробці гранітних кар'єрів"
+  - `seniority` (0.00): "unknown" → "middle"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `skills` (0.67): +зайве: API Integration, Web Services, Accounting
+- **job_17** (ok)
+  - `seniority` (0.00): "unknown" → "junior"
+  - `employment_type` (0.00): "freelance" → "unknown"
+  - `locations` (0.00): +зайве: Ukraine
+  - `experience_years_min` (0.00): null → 0.0
+  - `skills` (0.80): +зайве: Technical Specifications
+- **job_20** (ok)
+  - `locations` (0.00): +зайве: Ukraine
+  - `skills` (0.85): +зайве: Unix shell, API integration, Multithreading, Asynchronous programming
+- **job_24** (ok)
+  - `title` (0.00): "Ведущая вебинаров" → "Ведущая вебинаров OrientoGrace"
+  - `locations` (0.00): +зайве: Worldwide
+  - `skills` (0.00): +зайве: Публичные выступления, Коммуникация, Презентационные навыки
+- **job_29** (ok)
+  - `seniority` (0.00): "unknown" → "senior"
+  - `skills` (0.57): +зайве: Distributed Systems, Networking, Multithreading
+
+## claude-haiku-4-5__v1__t07_p09
+- **job_01** (ok)
+  - `role_category` (0.00): "devops" → "management"
+  - `skills` (0.56): −пропущено: Microsoft; +зайве: System Administration, Microsoft Infrastructure, Team Management, Data Center Management, ISO 27001, ISO 27701, PCI DSS
+- **job_03** (ok)
+  - `seniority` (0.00): "unknown" → "middle"
+- **job_07** (ok)
+  - `seniority` (0.00): "unknown" → "middle"
+  - `skills` (0.86): +зайве: DevOps, GPS systems, IoT, Telematics systems
+- **job_10** (ok)
+  - `locations` (0.86): −пропущено: Croatia
+  - `skills` (0.69): +зайве: Functional Testing, Regression Testing, Smoke Testing, Exploratory Testing, PC Games Testing, Gamepad Testing, Bug Tracking, Test Automation
+  - `posting_language` (0.00): "en" → "mixed"
+- **job_12** (ok)
+  - `seniority` (0.00): "unknown" → "junior"
+- **job_15** (ok)
+  - `company` (0.00): null → "Національна компанія по розробці гранітних кар'єрів"
+  - `seniority` (0.00): "unknown" → "middle"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `skills` (0.67): +зайве: API integration, Web-services, Accounting
+- **job_17** (ok)
+  - `seniority` (0.00): "unknown" → "junior"
+  - `employment_type` (0.00): "freelance" → "contract"
+  - `locations` (0.00): +зайве: Ukraine
+  - `experience_years_min` (0.00): null → 0.0
+  - `skills` (0.80): +зайве: Business Process Automation
+- **job_20** (ok)
+  - `locations` (0.00): +зайве: Ukraine
+  - `skills` (0.85): +зайве: Unix Shell, API Integration, Multithreading, Asynchronous Programming
+- **job_24** (ok)
+  - `title` (0.00): "Ведущая вебинаров" → "Ведущая вебинаров OrientoGrace"
+  - `locations` (0.00): +зайве: Worldwide
+  - `skills` (0.00): +зайве: Public Speaking, Communication, Audience Engagement
+  - `languages` (0.00): +зайве: ru:native
+- **job_29** (ok)
+  - `seniority` (0.00): "unknown" → "senior"
+  - `locations` (0.67): +зайве: Ukraine
+  - `skills` (0.50): +зайве: Distributed Systems, Networking, Multithreading, Real-time Communication Protocols
+  - `posting_language` (0.00): "en" → "mixed"
+
+## claude-haiku-4-5__v2__t0
+- **job_07** (ok)
+  - `skills` (0.96): −пропущено: REST API
+- **job_10** (ok)
+  - `locations` (0.57): −пропущено: Europe, Croatia; +зайве: EU
+  - `posting_language` (0.00): "en" → "mixed"
+- **job_15** (ok)
+  - `company` (0.00): null → "Національна компанія по розробці гранітних кар'єрів"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `skills` (0.86): +зайве: API
+- **job_17** (ok)
+  - `locations` (0.00): +зайве: Worldwide
+- **job_20** (ok)
+  - `locations` (0.00): +зайве: Ukraine
+  - `skills` (0.96): +зайве: Unix shell
+- **job_24** (ok)
+  - `title` (0.00): "Ведущая вебинаров" → "Ведущая вебинаров OrientoGrace"
+  - `locations` (0.00): +зайве: Worldwide
+- **job_29** (ok)
+  - `skills` (0.80): +зайве: Distributed systems
+
+## claude-haiku-4-5__v2__t07_p09
+- **job_07** (ok)
+  - `skills` (0.96): −пропущено: REST API
+- **job_10** (ok)
+  - `locations` (0.86): −пропущено: Croatia
+  - `posting_language` (0.00): "en" → "mixed"
+- **job_15** (ok)
+  - `company` (0.00): null → "Національна компанія по розробці гранітних кар'єрів"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `skills` (0.86): +зайве: API integration
+- **job_17** (ok)
+  - `locations` (0.00): +зайве: Ukraine
+- **job_20** (ok)
+  - `locations` (0.00): +зайве: Ukraine
+- **job_24** (ok)
+  - `title` (0.00): "Ведущая вебинаров" → "Ведущая вебинаров OrientoGrace"
+  - `locations` (0.00): +зайве: Worldwide
+- **job_29** (ok)
+  - `skills` (0.80): +зайве: Distributed systems
+
+## claude-haiku-5-5__v1__api_default
+- **job_01** (ok)
+  - `role_category` (0.00): "devops" → "management"
+- **job_03** (ok)
+  - `skills` (0.89): −пропущено: Figma, Sketch
+- **job_07** (ok)
+  - `skills` (0.96): −пропущено: REST API
+- **job_10** (ok)
+  - `locations` (0.67): −пропущено: Kraków, Croatia
+  - `skills` (0.86): +зайве: PC game testing, Gamepad testing, Test automation
+  - `posting_language` (0.00): "en" → "mixed"
+- **job_12** (ok)
+  - `languages` (0.00): −пропущено: uk:C2; +зайве: uk:C1
+- **job_15** (ok)
+  - `salary` (0.75): {"min": 50000, "max": 70000, "currency": "UAH", "period": "month"} → {"min": 50000.0, "max": 70000.0, "currency": "other", "period": "month"}
+  - `skills` (0.67): −пропущено: Excel; +зайве: Бухгалтерський облік
+- **job_17** (ok)
+  - `employment_type` (0.00): "freelance" → "full_time"
+- **job_20** (ok)
+  - `skills` (0.81): +зайве: unix shell, AI agents, third-party API integration, multithreading, asynchronous programming
+- **job_24** (ok)
+  - `posting_language` (0.00): "ru" → "mixed"
+- **job_29** (ok)
+  - `skills` (0.57): +зайве: distributed systems, networking, multithreading
+
+## claude-haiku-5-5__v2__api_default
+- **job_03** (ok)
+  - `skills` (0.95): −пропущено: CMS
+- **job_07** (ok)
+  - `skills` (0.96): −пропущено: REST API
+- **job_10** (ok)
+  - `locations` (0.40): −пропущено: Europe, Ukraine, Croatia
+- **job_17** (ok)
+  - `work_format` (0.00): "remote" → "flexible"
+- **job_20** (ok)
+  - `skills` (0.91): −пропущено: RAG; +зайве: Unix shell
+
+## qwen2.5-3b-local__v1__t0
+- **job_01** (ok)
+  - `company` (0.00): "ITExpert" → "Продуктова компанія"
+  - `role_category` (0.00): "devops" → "other"
+  - `seniority` (0.00): "head" → "unknown"
+  - `locations` (0.67): −пропущено: Kyiv
+  - `skills` (0.00): −пропущено: Microsoft, VMware, Cisco, Fortigate, Zabbix, Schneider Electric SCADA; +зайве: system administration, local servers or data centers, Microsoft infrastructure, team management
+- **job_03** (ok)
+  - `role_category` (0.00): "frontend" → "erp_1c"
+  - `salary` (0.75): {"min": 500, "max": 700, "currency": "USD", "period": "month"} → {"min": 500.0, "max": 700.0, "currency": "USD", "period": "hour"}
+  - `skills` (0.82): −пропущено: Figma, Sketch, CMS
+  - `languages` (0.00): −пропущено: en:B1; +зайве: uk:B1
+- **job_07** (ok)
+  - `company` (0.00): "Antenor" → "Продуктова компанія"
+  - `seniority` (0.00): "unknown" → "senior"
+  - `skills` (0.80): −пропущено: PostGIS, Git, REST API, Docker
+  - `languages` (0.67): −пропущено: en:A1
+  - `posting_language` (0.00): "uk" → "en"
+- **job_10** (ok)
+  - `company` (0.00): "osirisai" → "DefTech"
+  - `locations` (0.57): −пропущено: Ukraine, Croatia; +зайве: candidates from abroad
+  - `skills` (0.00): −пропущено: Jira, YouTrack, Unreal Automation Framework, Gauntlet, Python, C#, C++, Perforce, Git; +зайве: English, Ukrainian, PC gaming, Gamepad testing, Test automation, Drone testing, Flight simulator testing, Version control systems
+  - `posting_language` (0.00): "en" → "uk"
+- **job_12** (ok)
+  - `role_category` (0.00): "sales" → "recruitment_hr"
+  - `experience_years_min` (0.00): 0 → null
+  - `languages` (0.00): −пропущено: uk:C2; +зайве: uk:native
+- **job_15** (ok)
+  - `title` (0.00): "програміст BAS/1С" → "Вакансія програміст BAS/1С / Київ / 50-70к"
+  - `company` (0.00): null → "Національна компанія по розробці гранітних кар'єрів"
+  - `role_category` (0.00): "erp_1c" → "backend"
+  - `work_format` (0.00): "office" → "remote"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `locations` (0.00): −пропущено: Kyiv; +зайве: м. Київ, вул. Гришка, 9
+  - `skills` (0.36): −пропущено: Excel; +зайве: Аналітичне мислення, Бухобліку, Інтеграція з API, Інтеграція з web-сервісами, Впровадження нових модулів, Підтримка користувачів
+- **job_17** (ok)
+  - `role_category` (0.00): "erp_1c" → "fullstack"
+  - `employment_type` (0.00): "freelance" → "unknown"
+  - `locations` (0.00): +зайве: unknown
+  - `skills` (0.80): +зайве: прописано не вказується
+- **job_20** (ok)
+  - `role_category` (0.00): "backend" → "fullstack"
+  - `work_format` (0.00): "unknown" → "remote"
+  - `employment_type` (0.00): "unknown" → "contract"
+  - `locations` (0.00): +зайве: unknown
+  - `salary` (0.50): {"min": 300, "max": 800, "currency": "USD", "period": "month"} → {"min": 300.0, "max": 800.0, "currency": "EUR", "period": "hour"}
+  - `skills` (0.85): +зайве: Unix shell, OpenAI API agents, Integrating external APIs, Async programming
+  - `languages` (0.00): +зайве: uk:native
+  - `posting_language` (0.00): "uk" → "en"
+- **job_24** (ok)
+  - `title` (0.00): "Ведущая вебинаров" → "Ведущая вебинаров OrientoGrace"
+  - `company` (0.00): "OrientoGrace" → null
+  - `seniority` (0.00): "unknown" → "lead"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `skills` (0.00): +зайве: Уверенная и грамотная речь, Умение удерживать внимание аудитории и создавать доброжелательную атмосферу, Ответственность
+- **job_29** (ok)
+  - `title` (0.00): "Core Developer (Rust/C++)" → "Core Developer (Rust/C++) for Swarm Robotics & Sensor Control"
+  - `seniority` (0.00): "unknown" → "middle"
+  - `work_format` (0.00): "office" → "remote"
+  - `locations` (0.00): −пропущено: Kyiv; +зайве: Kyiv, Ukraine
+  - `posting_language` (0.00): "en" → "uk"
+
+## qwen2.5-3b-local__v1__t07_p09
+- **job_01** (ok)
+  - `company` (0.00): "ITExpert" → "Продуктова компанія"
+  - `role_category` (0.00): "devops" → "other"
+  - `seniority` (0.00): "head" → "unknown"
+  - `locations` (0.67): −пропущено: Kyiv
+  - `skills` (0.63): +зайве: ISO 27001, ISO 27701, PCI DSS, system administration, local servers or data centers, Microsoft infrastructure, team management
+- **job_03** (ok)
+  - `role_category` (0.00): "frontend" → "erp_1c"
+  - `work_format` (0.00): "remote" → "unknown"
+  - `locations` (0.67): +зайве: Countries where we consider candidates
+  - `salary` (0.75): {"min": 500, "max": 700, "currency": "USD", "period": "month"} → {"min": 500.0, "max": 700.0, "currency": "USD", "period": "hour"}
+  - `skills` (0.75): −пропущено: Bootstrap, Figma, Sketch, CMS
+  - `languages` (0.67): +зайве: uk:unknown
+- **job_07** (ok)
+  - `company` (0.00): "Antenor" → "Продуктова компанія"
+  - `seniority` (0.00): "unknown" → "middle"
+  - `locations` (0.00): −пропущено: Worldwide
+  - `skills` (0.91): −пропущено: REST API, Docker
+- **job_10** (ok)
+  - `company` (0.00): "osirisai" → "DefTech"
+  - `locations` (0.40): −пропущено: Europe, Ukraine, Croatia
+  - `skills` (0.00): −пропущено: Jira, YouTrack, Unreal Automation Framework, Gauntlet, Python, C#, C++, Perforce, Git; +зайве: Ukrainian citizenship, 2+ years of QA experience, Experience testing PC games, You’re an active PC gamer with a good understanding of games, Experience playing and testing with gamepads, Upper-Intermediate English, Independence: the ability to set up the testing process yourself, prioritize, and see tasks through without constant supervision, Understanding of the software development lifecycle and testing types, Experience with bug trackers (Jira, YouTrack, or similar), Strong attention to detail and the ability to describe issues clearly, Confident PC user with an understanding of hardware and basic system settings
+  - `posting_language` (0.00): "en" → "ru"
+- **job_12** (ok)
+  - `role_category` (0.00): "sales" → "management"
+  - `seniority` (0.00): "unknown" → "junior"
+  - `experience_years_min` (0.00): 0 → null
+  - `languages` (0.00): −пропущено: uk:C2; +зайве: uk:native
+  - `posting_language` (0.00): "uk" → "ru"
+- **job_15** (ok)
+  - `title` (0.00): "програміст BAS/1С" → "Вакансія програміст BAS/1С / Київ / 50-70к"
+  - `company` (0.00): null → "Національна компанія по розробці гранітних кар'єрів"
+  - `role_category` (0.00): "erp_1c" → "other"
+  - `work_format` (0.00): "office" → "remote"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `locations` (0.00): −пропущено: Kyiv; +зайве: м. Київ, вул. Гришка, 9
+  - `salary` (0.75): {"min": 50000, "max": 70000, "currency": "UAH", "period": "month"} → {"min": 50000.0, "max": 70000.0, "currency": "UAH", "period": "year"}
+  - `skills` (0.25): −пропущено: BAS, Excel; +зайве: Досвід BAS/1С, Впевнене володіння 1С:Підприємство 8.3, Досвід адаптації типових конфігурацій, Базові знання бухобліку
+  - `languages` (0.00): +зайве: an:unknown
+- **job_17** (ok)
+  - `role_category` (0.00): "erp_1c" → "fullstack"
+  - `employment_type` (0.00): "freelance" → "unknown"
+  - `locations` (0.00): +зайве: unknown
+  - `skills` (0.80): +зайве: з працювати з ТЗ
+- **job_20** (ok)
+  - `role_category` (0.00): "backend" → "fullstack"
+  - `work_format` (0.00): "unknown" → "remote"
+  - `employment_type` (0.00): "unknown" → "contract"
+  - `locations` (0.00): +зайве: ukraine
+  - `salary` (0.75): {"min": 300, "max": 800, "currency": "USD", "period": "month"} → {"min": 300.0, "max": 800.0, "currency": "EUR", "period": "month"}
+  - `skills` (0.85): +зайве: Unix shell, OpenAI API agents, API integration, Concurrency vs Asynchrony
+- **job_24** (ok)
+  - `title` (0.00): "Ведущая вебинаров" → "Ведущая вебинаров OrientoGrace"
+  - `company` (0.00): "OrientoGrace" → null
+  - `seniority` (0.00): "unknown" → "lead"
+  - `locations` (0.00): +зайве: unknown
+  - `skills` (0.00): +зайве: Уверенная и грамотная речь, Умение удерживать внимание аудитории и создавать доброжелательную атмосферу, Ответственность
+- **job_29** (ok)
+  - `seniority` (0.00): "unknown" → "middle"
+  - `work_format` (0.00): "office" → "remote"
+  - `locations` (0.00): −пропущено: Kyiv; +зайве: Kyiv, Ukraine
+  - `posting_language` (0.00): "en" → "uk"
+
+## qwen2.5-3b-local__v2__t0
+- **job_01** (ok)
+  - `company` (0.00): "ITExpert" → "Продуктова компанія"
+  - `role_category` (0.00): "devops" → "management"
+  - `locations` (0.80): +зайве: Worldwide
+  - `skills` (0.00): −пропущено: Microsoft, VMware, Cisco, Fortigate, Zabbix, Schneider Electric SCADA; +зайве: системного адміністрування, роботи з локальними серверами або в дата-центрах, адміністрування Microsoft-інфраструктури, управління командою
+- **job_03** (ok)
+  - `locations` (0.67): +зайве: Worldwide
+  - `skills` (0.78): −пропущено: Figma, Sketch, CMS; +зайве: B1 English
+  - `posting_language` (0.00): "uk" → "en"
+- **job_07** (ok)
+  - `seniority` (0.00): "unknown" → "senior"
+  - `locations` (0.67): +зайве: Other
+  - `skills` (0.91): −пропущено: REST API, Docker
+- **job_10** (ok)
+  - `locations` (0.57): −пропущено: Ukraine, Croatia; +зайве: Worldwide
+  - `skills` (0.00): −пропущено: Jira, YouTrack, Unreal Automation Framework, Gauntlet, Python, C#, C++, Perforce, Git; +зайве: Ukrainian citizenship, QA experience, Experience testing PC games, Upper-Intermediate English, Independence, Understanding of the software development lifecycle and testing types, Experience with bug trackers (Jira, YouTrack, or similar), Strong attention to detail and the ability to describe issues clearly, Confident PC user with an understanding of hardware and basic system settings
+  - `posting_language` (0.00): "en" → "uk"
+- **job_12** (ok)
+  - `company` (0.00): "JustSchool" → null
+  - `role_category` (0.00): "sales" → "recruitment_hr"
+  - `work_format` (0.00): "remote" → "unknown"
+  - `languages` (0.00): −пропущено: uk:C2; +зайве: uk:native
+- **job_15** (ok)
+  - `company` (0.00): null → "Національна компанія по розробці гранітних кар'єрів"
+  - `seniority` (0.00): "unknown" → "middle"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `locations` (0.67): +зайве: Poznaki
+  - `skills` (0.67): −пропущено: Excel; +зайве: бухоблік
+  - `languages` (0.00): +зайве: uk:B1
+- **job_17** (ok)
+  - `title` (0.00): "Програміст 1С / BAS" → "Шукаємо програміста 1С / BAS"
+  - `employment_type` (0.00): "freelance" → "unknown"
+  - `salary` (0.75): {"min": 700, "max": null, "currency": "UAH", "period": "hour"} → {"min": 700.0, "max": null, "currency": "UAH", "period": "month"}
+  - `skills` (0.40): −пропущено: 1C; +зайве: досвід з 1С / BAS, вміння працювати з ТЗ
+  - `languages` (0.00): +зайве: uk:unknown
+- **job_20** (ok)
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `locations` (0.00): +зайве: unknown
+  - `skills` (0.80): −пропущено: Linux; +зайве: Unix shell, OpenAI API agents, Integrating external APIs, Async programming
+  - `languages` (0.00): +зайве: uk:unknown
+- **job_24** (ok)
+  - `title` (0.00): "Ведущая вебинаров" → "Ведущая вебинаров OrientoGrace"
+  - `company` (0.00): "OrientoGrace" → null
+  - `posting_language` (0.00): "ru" → "uk"
+- **job_29** (ok)
+  - `seniority` (0.00): "unknown" → "senior"
+  - `skills` (0.57): +зайве: Distributed systems, Networking, Multithreading
+  - `posting_language` (0.00): "en" → "uk"
+
+## qwen2.5-3b-local__v2__t07_p09
+- **job_01** (ok)
+  - `company` (0.00): "ITExpert" → "Продуктова компанія"
+  - `role_category` (0.00): "devops" → "management"
+  - `seniority` (0.00): "head" → "lead"
+  - `skills` (0.00): −пропущено: Microsoft, VMware, Cisco, Fortigate, Zabbix, Schneider Electric SCADA; +зайве: системного адміністрування, роботи з локальними серверами або в дата-центрах, адміністрування Microsoft-інфраструктури, управління командою
+- **job_03** (ok)
+  - `locations` (0.67): +зайве: Worldwide
+  - `skills` (0.89): −пропущено: Figma, Sketch
+  - `posting_language` (0.00): "uk" → "en"
+- **job_07** (ok)
+  - `locations` (0.67): +зайве: countries where candidates are accepted
+  - `skills` (0.91): −пропущено: REST API, Docker
+- **job_10** (ok)
+  - `locations` (0.57): −пропущено: Europe, Croatia; +зайве: EU
+  - `skills` (0.00): −пропущено: Jira, YouTrack, Unreal Automation Framework, Gauntlet, Python, C#, C++, Perforce, Git; +зайве: Ukrainian citizenship, 2+ years of QA experience, Experience testing PC games, Upper-Intermediate English, Independence, Understanding of the software development lifecycle and testing types, Experience with bug trackers (Jira, YouTrack, or similar), Strong attention to detail and the ability to describe issues clearly, Confident PC user with an understanding of hardware and basic system settings
+  - `posting_language` (0.00): "en" → "uk"
+- **job_12** (ok)
+  - `company` (0.00): "JustSchool" → null
+  - `role_category` (0.00): "sales" → "recruitment_hr"
+  - `work_format` (0.00): "remote" → "hybrid"
+  - `languages` (0.00): −пропущено: uk:C2; +зайве: uk:native
+- **job_15** (ok)
+  - `company` (0.00): null → "Національна компанія по розробці гранітних кар'єрів"
+  - `seniority` (0.00): "unknown" → "middle"
+  - `employment_type` (0.00): "unknown" → "full_time"
+  - `locations` (0.67): +зайве: Poznaky
+  - `salary` (0.75): {"min": 50000, "max": 70000, "currency": "UAH", "period": "month"} → {"min": 50000.0, "max": 70000.0, "currency": "UAH", "period": "year"}
+  - `skills` (0.80): −пропущено: Excel
+  - `languages` (0.00): +зайве: uk:B2
+- **job_17** (ok)
+  - `title` (0.00): "Програміст 1С / BAS" → "Шукаємо програміста 1С / BAS"
+  - `employment_type` (0.00): "freelance" → "unknown"
+  - `salary` (0.25): {"min": 700, "max": null, "currency": "UAH", "period": "hour"} → {"min": null, "max": 700.0, "currency": "UAH", "period": "month"}
+  - `skills` (0.40): −пропущено: 1C; +зайве: досвід з 1С / BAS, вміння працювати з ТЗ
+- **job_20** (ok)
+  - `title` (0.00): "Junior Python developer" → "Junior Python developer — 300–800$"
+  - `company` (0.00): "Momentum Squads" → "Мomentum Squads - українська компанія, працює як аутсорс, так і з власними продуктами. Спеціалізується на AI, чатботах, веб ріешеннях та багато іншого"
+  - `seniority` (0.00): "junior" → "unknown"
+  - `locations` (0.00): +зайве: Kyiv
+  - `salary` (0.75): {"min": 300, "max": 800, "currency": "USD", "period": "month"} → {"min": 300.0, "max": 800.0, "currency": "UAH", "period": "month"}
+  - `skills` (0.85): +зайве: Unix shell, Chatbot agents, API integration, Async
+  - `languages` (0.00): +зайве: uk:unknown
+- **job_24** (ok)
+  - `title` (0.00): "Ведущая вебинаров" → "Ведущая вебинаров OrientoGrace"
+  - `company` (0.00): "OrientoGrace" → null
+- **job_29** (ok)
+  - `seniority` (0.00): "unknown" → "senior"
+  - `skills` (0.57): +зайве: Proficiency in distributed systems, Knowledge of networking, Knowledge of multithreading
+  - `posting_language` (0.00): "en" → "uk"
