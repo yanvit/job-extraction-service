@@ -1,0 +1,4 @@
+version: v2
+date: 2026-10-29
+author: Vitalii
+summary: Явні правила нормалізації (зарплата, seniority, мови CEFR, локації англійською, required vs nice-to-have), ігнорування шуму job-бордів, короткий приклад.
