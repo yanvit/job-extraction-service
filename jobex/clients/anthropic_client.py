@@ -81,15 +81,18 @@ class AnthropicClient(LLMClient):
         mode = self.structured_mode
         sent = self._sampling_kwargs(sampling)
         kwargs = dict(model=self.model, max_tokens=self.max_tokens, system=system,
-                      messages=[{"role": "user", "content": user}], **sent)
+                      messages=[{"role": "user", "content": user}])
+        # temperature/top_p і output_config шлемо через extra_body: нові версії SDK прибрали
+        # temperature/top_p з типізованих аргументів (моделі 5.x їх не приймають), а старі не знають output_config.
+        extra_body: dict = dict(sent)
         if mode == "json_schema":
-            # extra_body — щоб працювало незалежно від того, чи знає ваша версія SDK параметр output_config
-            kwargs["extra_body"] = {"output_config": {"format": {"type": "json_schema",
-                                                                 "schema": sanitize_schema(schema)}}}
+            extra_body["output_config"] = {"format": {"type": "json_schema", "schema": sanitize_schema(schema)}}
         else:
             kwargs["tools"] = [{"name": TOOL_NAME, "input_schema": schema,
                                 "description": "Save the structured job posting extracted from the text."}]
             kwargs["tool_choice"] = {"type": "tool", "name": TOOL_NAME}
+        if extra_body:
+            kwargs["extra_body"] = extra_body
 
         t0 = time.perf_counter()
         try:
