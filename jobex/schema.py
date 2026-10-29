@@ -92,8 +92,8 @@ class PostingLanguage(str, Enum):
 class Salary(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    min: Optional[float] = Field(None, ge=0, description="Нижня межа; null, якщо вказана лише верхня ('до $700').")
-    max: Optional[float] = Field(None, ge=0, description="Верхня межа; null, якщо вказана лише нижня ('від 500$').")
+    min: Optional[float] = Field(..., ge=0, description="Нижня межа; null, якщо вказана лише верхня ('до $700').")
+    max: Optional[float] = Field(..., ge=0, description="Верхня межа; null, якщо вказана лише нижня ('від 500$').")
     currency: Currency
     period: SalaryPeriod = Field(description="Якщо період не вказано — month.")
 
@@ -116,7 +116,7 @@ class Skill(BaseModel):
 class LanguageRequirement(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    language: str = Field(min_length=2, max_length=2, description="ISO 639-1 код: en, uk, ru, pl, de ...")
+    language: str = Field(pattern=r"^[A-Za-z]{2}$", description="ISO 639-1 код (дві латинські літери): en, uk, ru, pl, de ...")
     level: LanguageLevel
 
     @field_validator("language")
@@ -129,16 +129,16 @@ class JobPosting(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     title: str = Field(min_length=2, description="Назва позиції без зарплати/локації.")
-    company: Optional[str] = Field(None, description="Назва компанії; null, якщо не вказана.")
+    company: Optional[str] = Field(..., description="Назва компанії; null, якщо не вказана.")
     role_category: RoleCategory
     seniority: Seniority
     work_format: WorkFormat
     employment_type: EmploymentType
-    locations: list[str] = Field(default_factory=list, description="Міста/країни/регіони англійською: 'Kyiv', 'Ukraine', 'EU', 'Worldwide'.")
-    salary: Optional[Salary] = Field(None, description="null, якщо чисел немає ('$$$$', 'обговорюється').")
-    experience_years_min: Optional[float] = Field(None, ge=0, le=40, description="Мінімум років досвіду; 0 — 'без досвіду'; null — не вказано.")
-    skills: list[Skill] = Field(default_factory=list)
-    languages: list[LanguageRequirement] = Field(default_factory=list)
+    locations: list[str] = Field(..., description="Міста/країни/регіони англійською: 'Kyiv', 'Ukraine', 'EU', 'Worldwide'.")
+    salary: Optional[Salary] = Field(..., description="null, якщо чисел немає ('$$$$', 'обговорюється').")
+    experience_years_min: Optional[float] = Field(..., ge=0, le=40, description="Мінімум років досвіду; 0 — 'без досвіду'; null — не вказано.")
+    skills: list[Skill] = Field(..., description="[] якщо навичок немає.")
+    languages: list[LanguageRequirement] = Field(..., description="[] якщо мовних вимог немає.")
     posting_language: PostingLanguage
 
 
