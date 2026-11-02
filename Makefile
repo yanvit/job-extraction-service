@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: install check run quick eval report regress golden
+.PHONY: install check run quick eval report regress golden corpus
 
 install:            ## встановити залежності
 	$(PY) -m pip install -r requirements.txt
@@ -25,3 +25,6 @@ regress:            ## регресія промптів v1 -> v2 на golden se
 
 golden:             ## перевірити golden set і згенерувати data/golden_review.md
 	$(PY) -m jobex.golden check && $(PY) -m jobex.golden review
+
+corpus:             ## ДЗ2: завантажити довідкові документи з data/sources/manifest.yaml у data/docs/
+	$(PY) scripts/fetch_corpus.py

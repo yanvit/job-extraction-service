@@ -1,0 +1,96 @@
+# Довідкові документи корпусу RAG (ДЗ2).
+# Авторські тексти не зберігаються в git: їх завантажує `make corpus` (scripts/fetch_corpus.py)
+# у data/docs/ (gitignored). Хеші й дати завантаження пишуться в data/docs/manifest.lock.json.
+#
+# license: public-domain — офіційні тексти (закони); copyrighted — статті/звіти: лише посилання + скрипт.
+# Документи-«пастки»: дві версії одного звіту (DOU зима/літо 2026), старі пояснення Дія Сіті (2021–2022) поруч
+# із чинним законом і свіжими статтями. Не вдалося завантажити (403/404): IT Ukraine annual 2025, BRDO 2018.
+documents:
+- id: law-diia-city
+  title: Закон України «Про стимулювання розвитку цифрової економіки в Україні» (Дія Сіті)
+  url: https://zakon.rada.gov.ua/laws/show/1667-20
+  format: html
+  doc_type: law
+  lang: uk
+  version: чинна редакція на дату завантаження
+  license: public-domain
+- id: kpmg-diia-city-2022
+  title: 'KPMG: Diia City — огляд правового режиму (2022)'
+  url: https://assets.kpmg.com/content/dam/kpmg/ua/pdf/2022/02/Diia-City-ua.pdf
+  format: pdf
+  doc_type: guide
+  lang: uk
+  version: 2022-02
+  license: copyrighted
+- id: pwc-diia-city-2021
+  title: 'PwC Tax & Legal Alert: законодавче регулювання Дія Сіті (2021)'
+  url: https://www.pwc.com/ua/uk/publications/tax-and-legal-alert/2021/legislative-regulation-diia-city.html
+  format: pdf
+  doc_type: guide
+  lang: uk
+  version: '2021'
+  license: copyrighted
+- id: unba-diia-city-resident
+  title: 'НААУ: резидент Дія Сіті — вимоги, особливості статусу та бронювання працівників'
+  url: https://unba.org.ua/publications/9948-rezident-diya-city-vimogi-osoblivosti-statusu-ta-bronyuvannya-pracivnikiv.html
+  format: html
+  doc_type: article
+  lang: uk
+  version: 2025-02
+  license: copyrighted
+- id: prokadry-gig-fop
+  title: 'ПроКадри: гіг-контракти, ФОП і зарплати — правила для резидентів Дія.City'
+  url: https://prokadry.com.ua/news/129652-gig-kontrakty-fop-i-zarplaty-iaki-pravyla-diiut-dlia-rezydentiv-diia-city
+  format: html
+  doc_type: article
+  lang: uk
+  version: '2026'
+  license: copyrighted
+- id: devua-diia-city-how-to
+  title: 'dev.ua: як стати резидентом Дія Сіті'
+  url: https://dev.ua/news/yak-staty-rezydentom-diia-city
+  format: html
+  doc_type: article
+  lang: uk
+  version: '2022'
+  license: copyrighted
+- id: dou-salary-winter-2026
+  title: 'DOU: зарплати українських розробників — зима 2026'
+  url: https://dou.ua/lenta/articles/salary-report-devs-winter-2026/
+  format: html
+  doc_type: report
+  lang: uk
+  version: 2026-winter
+  license: copyrighted
+- id: dou-salary-summer-2026
+  title: 'DOU: зарплати українських розробників — літо 2026'
+  url: https://dou.ua/lenta/articles/salary-report-devs-summer-2026/
+  format: html
+  doc_type: report
+  lang: uk
+  version: 2026-summer
+  license: copyrighted
+- id: forbes-median-salary-2026
+  title: 'Forbes Україна: медіана зарплат IT-розробників зросла до $3450 (за DOU, січень 2026)'
+  url: https://forbes.ua/news/mediana-zarplat-it-rozrobnikiv-zrosla-do-3450-khto-z-ukrainskikh-aytivtsiv-zaroblyae-naybilshe-doslidzhennya-dou-12012026-35431
+  format: html
+  doc_type: article
+  lang: uk
+  version: 2026-01
+  license: copyrighted
+- id: buhplatforma-fop3-2026
+  title: 'Бухгалтер 911: ФОП 3 група у 2026 році — ліміти та податки'
+  url: https://buhplatforma.com.ua/news/109482-fop-3-grupa-u-2026-rotsi-limity-ta-podatky
+  format: html
+  doc_type: guide
+  lang: uk
+  version: '2026'
+  license: copyrighted
+- id: monobank-fop3-2026
+  title: 'monobank: ФОП 3 група у 2026 році'
+  url: https://monobank.ua/knowledge-base/fop/fop-3-grupa-2026
+  format: html
+  doc_type: guide
+  lang: uk
+  version: '2026'
+  license: copyrighted
