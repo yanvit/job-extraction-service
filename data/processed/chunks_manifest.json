@@ -1,0 +1,823 @@
+{
+  "strategy": "structure",
+  "params": {
+    "target": 1200,
+    "max": 1400,
+    "min": 300
+  },
+  "documents": 160,
+  "chunks": 849,
+  "quality": {
+    "chunks": 849,
+    "median_chars": 812,
+    "p95_chars": 1191,
+    "max_tokens_approx": 431,
+    "tiny_lt_200": 36,
+    "start_mid_sentence_pct": 2.9,
+    "cut_inside_block_pct": 0.9,
+    "cross_section_pct": 0.0,
+    "with_section_metadata_pct": 98.4
+  },
+  "per_document": [
+    {
+      "doc_id": "law-diia-city",
+      "chunks": 125,
+      "doc_sha256": "1bd46ef6f72d075f"
+    },
+    {
+      "doc_id": "kpmg-diia-city-2022",
+      "chunks": 9,
+      "doc_sha256": "491a325e08994114"
+    },
+    {
+      "doc_id": "pwc-diia-city-2021",
+      "chunks": 11,
+      "doc_sha256": "7dc70c589e308166"
+    },
+    {
+      "doc_id": "unba-diia-city-resident",
+      "chunks": 11,
+      "doc_sha256": "e8564c6316e14fd4"
+    },
+    {
+      "doc_id": "prokadry-gig-fop",
+      "chunks": 2,
+      "doc_sha256": "ef97175f272042e5"
+    },
+    {
+      "doc_id": "devua-diia-city-how-to",
+      "chunks": 7,
+      "doc_sha256": "a0a3923ca40b2463"
+    },
+    {
+      "doc_id": "dou-salary-winter-2026",
+      "chunks": 19,
+      "doc_sha256": "b085be921cda670d"
+    },
+    {
+      "doc_id": "dou-salary-summer-2026",
+      "chunks": 22,
+      "doc_sha256": "40fc49c7540dcaa6"
+    },
+    {
+      "doc_id": "forbes-median-salary-2026",
+      "chunks": 5,
+      "doc_sha256": "281d6f827a0f1748"
+    },
+    {
+      "doc_id": "buhplatforma-fop3-2026",
+      "chunks": 1,
+      "doc_sha256": "d415ccbc12324822"
+    },
+    {
+      "doc_id": "monobank-fop3-2026",
+      "chunks": 9,
+      "doc_sha256": "8dc3e8ca1332010f"
+    },
+    {
+      "doc_id": "djinni-188528",
+      "chunks": 2,
+      "doc_sha256": "9f2ff19781061e7a"
+    },
+    {
+      "doc_id": "djinni-421582",
+      "chunks": 1,
+      "doc_sha256": "650001fcfc4180cc"
+    },
+    {
+      "doc_id": "djinni-529314",
+      "chunks": 5,
+      "doc_sha256": "79b57bd561f81aec"
+    },
+    {
+      "doc_id": "djinni-632454",
+      "chunks": 3,
+      "doc_sha256": "fe2b6f74336ca5ad"
+    },
+    {
+      "doc_id": "djinni-690808",
+      "chunks": 3,
+      "doc_sha256": "cbabb7a4f18c6bc4"
+    },
+    {
+      "doc_id": "djinni-692529",
+      "chunks": 3,
+      "doc_sha256": "e56fbb21ce73d586"
+    },
+    {
+      "doc_id": "djinni-693729",
+      "chunks": 5,
+      "doc_sha256": "4517f2db702cf6c9"
+    },
+    {
+      "doc_id": "djinni-746003",
+      "chunks": 6,
+      "doc_sha256": "3024dee1d39902e3"
+    },
+    {
+      "doc_id": "djinni-777758",
+      "chunks": 4,
+      "doc_sha256": "5b93b3a43b40032e"
+    },
+    {
+      "doc_id": "djinni-786559",
+      "chunks": 3,
+      "doc_sha256": "e22633650ef421a7"
+    },
+    {
+      "doc_id": "djinni-787644",
+      "chunks": 5,
+      "doc_sha256": "9746b2cf952f8fe7"
+    },
+    {
+      "doc_id": "djinni-790649",
+      "chunks": 4,
+      "doc_sha256": "1cbecfacf6effe8a"
+    },
+    {
+      "doc_id": "djinni-796730",
+      "chunks": 4,
+      "doc_sha256": "9569130a0316117f"
+    },
+    {
+      "doc_id": "djinni-812977",
+      "chunks": 6,
+      "doc_sha256": "fd2b9c342b798fb2"
+    },
+    {
+      "doc_id": "djinni-815563",
+      "chunks": 4,
+      "doc_sha256": "f3b6a4652e20d850"
+    },
+    {
+      "doc_id": "djinni-818600",
+      "chunks": 4,
+      "doc_sha256": "8722d6ab96ec1fd2"
+    },
+    {
+      "doc_id": "djinni-827023",
+      "chunks": 5,
+      "doc_sha256": "4702591022c96586"
+    },
+    {
+      "doc_id": "djinni-831567",
+      "chunks": 14,
+      "doc_sha256": "a8e78d7a3bc8a456"
+    },
+    {
+      "doc_id": "djinni-831661",
+      "chunks": 7,
+      "doc_sha256": "f7d98f7ac6289e79"
+    },
+    {
+      "doc_id": "djinni-832027",
+      "chunks": 5,
+      "doc_sha256": "d6aee5cd6ffbe14a"
+    },
+    {
+      "doc_id": "djinni-832194",
+      "chunks": 9,
+      "doc_sha256": "1ec5b5866f66bd5b"
+    },
+    {
+      "doc_id": "djinni-833910",
+      "chunks": 4,
+      "doc_sha256": "75b88c30636063e6"
+    },
+    {
+      "doc_id": "djinni-835842",
+      "chunks": 2,
+      "doc_sha256": "ab84961441d9dea8"
+    },
+    {
+      "doc_id": "djinni-836394",
+      "chunks": 2,
+      "doc_sha256": "5d9a9c07f602cb5b"
+    },
+    {
+      "doc_id": "djinni-836416",
+      "chunks": 5,
+      "doc_sha256": "c24a6098f776687b"
+    },
+    {
+      "doc_id": "djinni-836696",
+      "chunks": 6,
+      "doc_sha256": "e33835f97a2be9db"
+    },
+    {
+      "doc_id": "djinni-837189",
+      "chunks": 3,
+      "doc_sha256": "54f151a649315f7b"
+    },
+    {
+      "doc_id": "djinni-839405",
+      "chunks": 3,
+      "doc_sha256": "0ecf477cea22192d"
+    },
+    {
+      "doc_id": "djinni-840647",
+      "chunks": 5,
+      "doc_sha256": "d23b887bbfc64c00"
+    },
+    {
+      "doc_id": "djinni-840665",
+      "chunks": 6,
+      "doc_sha256": "12e864c7a00b6646"
+    },
+    {
+      "doc_id": "djinni-841858",
+      "chunks": 2,
+      "doc_sha256": "6b1107fd5406cfdd"
+    },
+    {
+      "doc_id": "djinni-842276",
+      "chunks": 7,
+      "doc_sha256": "f016406b6955cba9"
+    },
+    {
+      "doc_id": "djinni-843405",
+      "chunks": 2,
+      "doc_sha256": "a1bd3319cc7c9562"
+    },
+    {
+      "doc_id": "djinni-843481",
+      "chunks": 5,
+      "doc_sha256": "89550a7af06e4f59"
+    },
+    {
+      "doc_id": "djinni-843700",
+      "chunks": 4,
+      "doc_sha256": "afc1fbdb4808c01f"
+    },
+    {
+      "doc_id": "djinni-844357",
+      "chunks": 5,
+      "doc_sha256": "09141044e40c3ea9"
+    },
+    {
+      "doc_id": "djinni-844740",
+      "chunks": 3,
+      "doc_sha256": "a0395209b5fd35a8"
+    },
+    {
+      "doc_id": "djinni-844825",
+      "chunks": 5,
+      "doc_sha256": "235211502698ff69"
+    },
+    {
+      "doc_id": "djinni-845118",
+      "chunks": 7,
+      "doc_sha256": "40a8652833fa8bab"
+    },
+    {
+      "doc_id": "djinni-845312",
+      "chunks": 2,
+      "doc_sha256": "e70756bc5481a15b"
+    },
+    {
+      "doc_id": "djinni-845710",
+      "chunks": 6,
+      "doc_sha256": "b4298871825118fb"
+    },
+    {
+      "doc_id": "djinni-846504",
+      "chunks": 2,
+      "doc_sha256": "e9a957de20348215"
+    },
+    {
+      "doc_id": "djinni-847368",
+      "chunks": 2,
+      "doc_sha256": "c0f7c707a935881b"
+    },
+    {
+      "doc_id": "djinni-847608",
+      "chunks": 7,
+      "doc_sha256": "da66bc0fca4dcc64"
+    },
+    {
+      "doc_id": "djinni-848030",
+      "chunks": 8,
+      "doc_sha256": "aa8864b128ed8919"
+    },
+    {
+      "doc_id": "djinni-848131",
+      "chunks": 2,
+      "doc_sha256": "63206b5176ced4d7"
+    },
+    {
+      "doc_id": "djinni-848243",
+      "chunks": 4,
+      "doc_sha256": "4be41340ea60a827"
+    },
+    {
+      "doc_id": "djinni-848477",
+      "chunks": 4,
+      "doc_sha256": "27e13664ce0b8c94"
+    },
+    {
+      "doc_id": "djinni-848816",
+      "chunks": 6,
+      "doc_sha256": "9a0ebc34eb20c9a2"
+    },
+    {
+      "doc_id": "djinni-848933",
+      "chunks": 5,
+      "doc_sha256": "dcd17a48aa46cefa"
+    },
+    {
+      "doc_id": "djinni-849142",
+      "chunks": 5,
+      "doc_sha256": "6995b607f203ce15"
+    },
+    {
+      "doc_id": "djinni-850041",
+      "chunks": 4,
+      "doc_sha256": "cec9d041782c1d2a"
+    },
+    {
+      "doc_id": "djinni-850137",
+      "chunks": 4,
+      "doc_sha256": "c6a14e6fe6636a24"
+    },
+    {
+      "doc_id": "djinni-850718",
+      "chunks": 2,
+      "doc_sha256": "6189e7e67324cee1"
+    },
+    {
+      "doc_id": "djinni-851194",
+      "chunks": 4,
+      "doc_sha256": "68e905657849c126"
+    },
+    {
+      "doc_id": "djinni-851611",
+      "chunks": 2,
+      "doc_sha256": "b2a4d3c1003c4b33"
+    },
+    {
+      "doc_id": "djinni-851645",
+      "chunks": 3,
+      "doc_sha256": "e6fb212bba13c9cd"
+    },
+    {
+      "doc_id": "djinni-851888",
+      "chunks": 3,
+      "doc_sha256": "c85c42f6f24acfc6"
+    },
+    {
+      "doc_id": "djinni-851929",
+      "chunks": 3,
+      "doc_sha256": "742604d04fca808a"
+    },
+    {
+      "doc_id": "djinni-852328",
+      "chunks": 3,
+      "doc_sha256": "1e6868327dff9932"
+    },
+    {
+      "doc_id": "djinni-852343",
+      "chunks": 7,
+      "doc_sha256": "4cc13b8cb464aa92"
+    },
+    {
+      "doc_id": "djinni-852371",
+      "chunks": 4,
+      "doc_sha256": "3489e15fb71d5a9e"
+    },
+    {
+      "doc_id": "djinni-852585",
+      "chunks": 5,
+      "doc_sha256": "5ceec1aaa4d751f9"
+    },
+    {
+      "doc_id": "djinni-852782",
+      "chunks": 3,
+      "doc_sha256": "fc1aa7c1dfc9710a"
+    },
+    {
+      "doc_id": "djinni-852872",
+      "chunks": 3,
+      "doc_sha256": "987ac55d42a99915"
+    },
+    {
+      "doc_id": "djinni-853129",
+      "chunks": 2,
+      "doc_sha256": "339a1b5446851101"
+    },
+    {
+      "doc_id": "djinni-853134",
+      "chunks": 3,
+      "doc_sha256": "71f88230754d8cd1"
+    },
+    {
+      "doc_id": "djinni-853357",
+      "chunks": 6,
+      "doc_sha256": "b7d287002f78127a"
+    },
+    {
+      "doc_id": "djinni-853381",
+      "chunks": 4,
+      "doc_sha256": "142584d8d8b28677"
+    },
+    {
+      "doc_id": "djinni-853382",
+      "chunks": 4,
+      "doc_sha256": "292909f86d45090e"
+    },
+    {
+      "doc_id": "djinni-853401",
+      "chunks": 5,
+      "doc_sha256": "cf8065ed80bf50a5"
+    },
+    {
+      "doc_id": "djinni-853498",
+      "chunks": 4,
+      "doc_sha256": "63f829925573c868"
+    },
+    {
+      "doc_id": "djinni-853510",
+      "chunks": 3,
+      "doc_sha256": "382666ece97965de"
+    },
+    {
+      "doc_id": "djinni-853526",
+      "chunks": 3,
+      "doc_sha256": "b6ce2d86f5871754"
+    },
+    {
+      "doc_id": "djinni-853528",
+      "chunks": 2,
+      "doc_sha256": "6e933770c2fd9338"
+    },
+    {
+      "doc_id": "djinni-853616",
+      "chunks": 4,
+      "doc_sha256": "7b47979d8233e7d0"
+    },
+    {
+      "doc_id": "djinni-853622",
+      "chunks": 4,
+      "doc_sha256": "2789435b4be55f1a"
+    },
+    {
+      "doc_id": "djinni-853647",
+      "chunks": 2,
+      "doc_sha256": "0feb2ebc50e2e6c3"
+    },
+    {
+      "doc_id": "djinni-853857",
+      "chunks": 4,
+      "doc_sha256": "34e32eb5b3913bfb"
+    },
+    {
+      "doc_id": "djinni-853892",
+      "chunks": 5,
+      "doc_sha256": "e9f62c371e6d322e"
+    },
+    {
+      "doc_id": "djinni-854098",
+      "chunks": 5,
+      "doc_sha256": "5129b4ecb0162752"
+    },
+    {
+      "doc_id": "djinni-854135",
+      "chunks": 4,
+      "doc_sha256": "25735ecb67384012"
+    },
+    {
+      "doc_id": "djinni-854141",
+      "chunks": 4,
+      "doc_sha256": "5537d863b2428b3c"
+    },
+    {
+      "doc_id": "djinni-854278",
+      "chunks": 7,
+      "doc_sha256": "77016dd906558db8"
+    },
+    {
+      "doc_id": "djinni-854551",
+      "chunks": 3,
+      "doc_sha256": "d6da09cb99966a83"
+    },
+    {
+      "doc_id": "djinni-854706",
+      "chunks": 4,
+      "doc_sha256": "58968b67fc13288a"
+    },
+    {
+      "doc_id": "djinni-854707",
+      "chunks": 4,
+      "doc_sha256": "64bb911d5c59635b"
+    },
+    {
+      "doc_id": "djinni-854780",
+      "chunks": 3,
+      "doc_sha256": "9f16a9c94c7bcb72"
+    },
+    {
+      "doc_id": "djinni-854853",
+      "chunks": 6,
+      "doc_sha256": "6a0691dc1610ae08"
+    },
+    {
+      "doc_id": "djinni-855030",
+      "chunks": 4,
+      "doc_sha256": "892d0bdd3bac61f6"
+    },
+    {
+      "doc_id": "djinni-855072",
+      "chunks": 3,
+      "doc_sha256": "997cbadf599e6b22"
+    },
+    {
+      "doc_id": "djinni-855096",
+      "chunks": 7,
+      "doc_sha256": "2dc934fa7ad01bb4"
+    },
+    {
+      "doc_id": "djinni-855110",
+      "chunks": 5,
+      "doc_sha256": "f0de78ba350ddf18"
+    },
+    {
+      "doc_id": "djinni-855111",
+      "chunks": 3,
+      "doc_sha256": "2d78c2492d0cc105"
+    },
+    {
+      "doc_id": "djinni-855158",
+      "chunks": 2,
+      "doc_sha256": "10a9589fbd70fffc"
+    },
+    {
+      "doc_id": "djinni-855183",
+      "chunks": 3,
+      "doc_sha256": "efeed7aa22c26765"
+    },
+    {
+      "doc_id": "djinni-855204",
+      "chunks": 4,
+      "doc_sha256": "b2ca8266b3edb212"
+    },
+    {
+      "doc_id": "djinni-855232",
+      "chunks": 5,
+      "doc_sha256": "148f627e9277b7ac"
+    },
+    {
+      "doc_id": "djinni-855245",
+      "chunks": 5,
+      "doc_sha256": "a0075d5bc79df5a1"
+    },
+    {
+      "doc_id": "djinni-855289",
+      "chunks": 3,
+      "doc_sha256": "a88df7a11d6644f5"
+    },
+    {
+      "doc_id": "djinni-855290",
+      "chunks": 3,
+      "doc_sha256": "b12ed25819df14f5"
+    },
+    {
+      "doc_id": "djinni-855303",
+      "chunks": 3,
+      "doc_sha256": "d743a86a024f4b20"
+    },
+    {
+      "doc_id": "djinni-855313",
+      "chunks": 5,
+      "doc_sha256": "9e116d548d55f8e0"
+    },
+    {
+      "doc_id": "djinni-855315",
+      "chunks": 4,
+      "doc_sha256": "edbdab01f043ce1d"
+    },
+    {
+      "doc_id": "djinni-855321",
+      "chunks": 6,
+      "doc_sha256": "3d57225c37ec30e4"
+    },
+    {
+      "doc_id": "djinni-855390",
+      "chunks": 3,
+      "doc_sha256": "274d77dc887739b1"
+    },
+    {
+      "doc_id": "djinni-855396",
+      "chunks": 3,
+      "doc_sha256": "c0bf29633f09bd8b"
+    },
+    {
+      "doc_id": "djinni-855408",
+      "chunks": 2,
+      "doc_sha256": "a114c3e7f3db6904"
+    },
+    {
+      "doc_id": "djinni-855416",
+      "chunks": 5,
+      "doc_sha256": "4f6ed55967f66152"
+    },
+    {
+      "doc_id": "djinni-855418",
+      "chunks": 4,
+      "doc_sha256": "d77f8f274fdfaf11"
+    },
+    {
+      "doc_id": "djinni-855435",
+      "chunks": 3,
+      "doc_sha256": "88c06d4550ff194f"
+    },
+    {
+      "doc_id": "djinni-855437",
+      "chunks": 3,
+      "doc_sha256": "f8de19d9622a0e4c"
+    },
+    {
+      "doc_id": "djinni-855439",
+      "chunks": 4,
+      "doc_sha256": "2078bc84b413baf5"
+    },
+    {
+      "doc_id": "djinni-855446",
+      "chunks": 5,
+      "doc_sha256": "2e4ba035e0cae6ca"
+    },
+    {
+      "doc_id": "djinni-855447",
+      "chunks": 5,
+      "doc_sha256": "a1f89aa0069a993a"
+    },
+    {
+      "doc_id": "djinni-855500",
+      "chunks": 4,
+      "doc_sha256": "5ea7a0f2c9900be6"
+    },
+    {
+      "doc_id": "djinni-855529",
+      "chunks": 3,
+      "doc_sha256": "79f1a0724554b9d0"
+    },
+    {
+      "doc_id": "djinni-855550",
+      "chunks": 4,
+      "doc_sha256": "84e65f6ad4678785"
+    },
+    {
+      "doc_id": "djinni-855553",
+      "chunks": 4,
+      "doc_sha256": "200a160194ca4825"
+    },
+    {
+      "doc_id": "djinni-855557",
+      "chunks": 4,
+      "doc_sha256": "4b94be655dd33782"
+    },
+    {
+      "doc_id": "djinni-855564",
+      "chunks": 5,
+      "doc_sha256": "72b427fd914eaa6e"
+    },
+    {
+      "doc_id": "djinni-855567",
+      "chunks": 5,
+      "doc_sha256": "8c715e765d0c3ff2"
+    },
+    {
+      "doc_id": "djinni-855588",
+      "chunks": 2,
+      "doc_sha256": "790331b03d7346e4"
+    },
+    {
+      "doc_id": "djinni-855622",
+      "chunks": 5,
+      "doc_sha256": "9f4a201d4f0e1b34"
+    },
+    {
+      "doc_id": "djinni-855631",
+      "chunks": 4,
+      "doc_sha256": "9510bf118a307d28"
+    },
+    {
+      "doc_id": "djinni-855640",
+      "chunks": 4,
+      "doc_sha256": "3196da7d00856f74"
+    },
+    {
+      "doc_id": "djinni-855655",
+      "chunks": 5,
+      "doc_sha256": "fe9dbf6b4cb381d7"
+    },
+    {
+      "doc_id": "djinni-855672",
+      "chunks": 5,
+      "doc_sha256": "6d03ec2b82b5b317"
+    },
+    {
+      "doc_id": "djinni-855687",
+      "chunks": 3,
+      "doc_sha256": "b9421ee93c7f564a"
+    },
+    {
+      "doc_id": "djinni-855688",
+      "chunks": 5,
+      "doc_sha256": "9f76d90ba35a95fa"
+    },
+    {
+      "doc_id": "djinni-855692",
+      "chunks": 6,
+      "doc_sha256": "504d579652ab9156"
+    },
+    {
+      "doc_id": "djinni-855697",
+      "chunks": 3,
+      "doc_sha256": "7b598bf2bbd31037"
+    },
+    {
+      "doc_id": "djinni-855698",
+      "chunks": 2,
+      "doc_sha256": "223aae0d6b200a19"
+    },
+    {
+      "doc_id": "djinni-855699",
+      "chunks": 6,
+      "doc_sha256": "3b445bfd264c3035"
+    },
+    {
+      "doc_id": "djinni-855706",
+      "chunks": 4,
+      "doc_sha256": "bfe6a1b2b45e1321"
+    },
+    {
+      "doc_id": "djinni-855719",
+      "chunks": 6,
+      "doc_sha256": "df18c690a7df1b4c"
+    },
+    {
+      "doc_id": "djinni-855760",
+      "chunks": 5,
+      "doc_sha256": "2923f85cb38d6756"
+    },
+    {
+      "doc_id": "djinni-855793",
+      "chunks": 4,
+      "doc_sha256": "5e0ac73f5e69d307"
+    },
+    {
+      "doc_id": "djinni-855795",
+      "chunks": 3,
+      "doc_sha256": "618a010859c380c4"
+    },
+    {
+      "doc_id": "djinni-855800",
+      "chunks": 4,
+      "doc_sha256": "638a2694082102aa"
+    },
+    {
+      "doc_id": "djinni-855808",
+      "chunks": 3,
+      "doc_sha256": "e43ba497df4c9d4c"
+    },
+    {
+      "doc_id": "djinni-855816",
+      "chunks": 5,
+      "doc_sha256": "6150f5611efa246e"
+    },
+    {
+      "doc_id": "djinni-855819",
+      "chunks": 4,
+      "doc_sha256": "2e15384451c16f98"
+    },
+    {
+      "doc_id": "djinni-855838",
+      "chunks": 4,
+      "doc_sha256": "f414911a867e5b11"
+    },
+    {
+      "doc_id": "djinni-855849",
+      "chunks": 7,
+      "doc_sha256": "1f4745fb01a00e71"
+    },
+    {
+      "doc_id": "djinni-855854",
+      "chunks": 5,
+      "doc_sha256": "483cf598e465fa43"
+    },
+    {
+      "doc_id": "djinni-855855",
+      "chunks": 3,
+      "doc_sha256": "53c9e8978ef868eb"
+    },
+    {
+      "doc_id": "djinni-855858",
+      "chunks": 8,
+      "doc_sha256": "a8dc9fad707eeef9"
+    },
+    {
+      "doc_id": "djinni-855872",
+      "chunks": 6,
+      "doc_sha256": "b37baf1b6a58abee"
+    }
+  ]
+}

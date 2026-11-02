@@ -44,6 +44,7 @@ class Document:
     license: str
     blocks: list[Block] = field(default_factory=list)
     content_sha256: str = ""
+    meta: dict = field(default_factory=dict)   # додаткові поля (для вакансій: stack, published)
 
     def text(self) -> str:
         return "\n".join(b.text for b in self.blocks)
@@ -60,6 +61,15 @@ BOILERPLATE = re.compile(
 )
 
 
+# Після цих рядків у статтях іде блок «схожих матеріалів» / реклами — далі текст документа не беремо.
+STOP_MARKERS = re.compile(r"^(матеріали по темі|матеріали за темою|читайте також|схожі статті|related articles|"
+                          r"поділитись матеріалом)$", re.IGNORECASE)
+
+
+# «3© 2022 KPMG. Усі права застережені.» усередині абзацу PDF (номер сторінки + копірайт у колонтитулі)
+COPYRIGHT_INLINE = re.compile(r"\d{0,3}\s*©\s*\d{4}\s+[^.]{1,40}\.(\s*Усі права застережені\.)?")
+
+
 def clean_text(s: str) -> str:
     s = unicodedata.normalize("NFC", s).translate(_INVISIBLE)   # не NFKC: він перетворює «№» на «No»
     s = s.replace(" ", " ")
@@ -73,7 +83,9 @@ def clean_blocks(blocks: list[Block], drop_patterns: list[str] | None = None) ->
     extra = [re.compile(p, re.IGNORECASE) for p in (drop_patterns or [])]
     out: list[Block] = []
     for b in blocks:
-        b.text = clean_text(b.text)
+        b.text = clean_text(COPYRIGHT_INLINE.sub("", b.text))
+        if STOP_MARKERS.match(b.text):
+            break
         if not b.text or BOILERPLATE.match(b.text) or any(x.search(b.text) for x in extra):
             continue
         if out and out[-1].text == b.text and out[-1].type == b.type:   # підряд однакові блоки (дубль у верстці)
@@ -282,7 +294,7 @@ def load_documents() -> tuple[list[Document], list[str]]:
         lang = "uk" if len(re.findall(r"[а-яіїєґ]", p.read_text(encoding="utf-8"), re.I)) > 500 else "en"
         docs.append(Document(meta.get("id", p.stem), meta.get("title", p.stem), meta.get("source", ""), "md",
                              "vacancy", lang, str(meta.get("published", "")), "djinni-public-posting",
-                             clean_blocks(blocks)))
+                             clean_blocks(blocks), meta={"stack": meta.get("stack", "")}))
     return docs, missing
 
 

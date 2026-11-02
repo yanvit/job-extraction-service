@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: install check run quick eval report regress golden corpus ingest
+.PHONY: install check run quick eval report regress golden corpus ingest chunks
 
 install:            ## встановити залежності
 	$(PY) -m pip install -r requirements.txt
@@ -31,3 +31,6 @@ corpus:             ## ДЗ2: завантажити довідкові доку
 
 ingest:             ## ДЗ2: вакансії → Markdown, документи → очищені блоки (data/processed/), дедуплікація
 	$(PY) scripts/build_vacancy_md.py && $(PY) -m rag.ingest
+
+chunks: ingest      ## ДЗ2: structure-aware chunking + порівняння з фіксованим розміром
+	$(PY) -m rag.chunking --compare

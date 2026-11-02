@@ -29,16 +29,16 @@
     {
       "doc_id": "kpmg-diia-city-2022",
       "format": "pdf",
-      "blocks": 32,
-      "chars": 7367,
-      "sha256": "6732ca5dcfab395d"
+      "blocks": 31,
+      "chars": 7147,
+      "sha256": "491a325e08994114"
     },
     {
       "doc_id": "pwc-diia-city-2021",
       "format": "pdf",
       "blocks": 41,
-      "chars": 9604,
-      "sha256": "4368c8b7688a5904"
+      "chars": 9592,
+      "sha256": "7dc70c589e308166"
     },
     {
       "doc_id": "unba-diia-city-resident",
@@ -78,9 +78,9 @@
     {
       "doc_id": "forbes-median-salary-2026",
       "format": "html",
-      "blocks": 87,
-      "chars": 7655,
-      "sha256": "8d05839cd0ee0c7e"
+      "blocks": 20,
+      "chars": 5055,
+      "sha256": "281d6f827a0f1748"
     },
     {
       "doc_id": "buhplatforma-fop3-2026",
