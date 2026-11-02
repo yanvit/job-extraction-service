@@ -1,0 +1,1143 @@
+{
+  "documents": 160,
+  "by_type_format": {
+    "law/html": 1,
+    "guide/pdf": 2,
+    "article/html": 4,
+    "report/html": 2,
+    "guide/html": 2,
+    "vacancy/md": 149
+  },
+  "missing_files": [],
+  "exact_duplicates_dropped": [],
+  "near_duplicates": [
+    {
+      "a": "djinni-855692",
+      "b": "djinni-855693",
+      "jaccard": 0.951,
+      "action": "dropped djinni-855693"
+    }
+  ],
+  "per_document": [
+    {
+      "doc_id": "law-diia-city",
+      "format": "html",
+      "blocks": 550,
+      "chars": 119722,
+      "sha256": "1bd46ef6f72d075f"
+    },
+    {
+      "doc_id": "kpmg-diia-city-2022",
+      "format": "pdf",
+      "blocks": 32,
+      "chars": 7367,
+      "sha256": "6732ca5dcfab395d"
+    },
+    {
+      "doc_id": "pwc-diia-city-2021",
+      "format": "pdf",
+      "blocks": 41,
+      "chars": 9604,
+      "sha256": "4368c8b7688a5904"
+    },
+    {
+      "doc_id": "unba-diia-city-resident",
+      "format": "html",
+      "blocks": 70,
+      "chars": 10430,
+      "sha256": "e8564c6316e14fd4"
+    },
+    {
+      "doc_id": "prokadry-gig-fop",
+      "format": "html",
+      "blocks": 19,
+      "chars": 1949,
+      "sha256": "ef97175f272042e5"
+    },
+    {
+      "doc_id": "devua-diia-city-how-to",
+      "format": "html",
+      "blocks": 47,
+      "chars": 4456,
+      "sha256": "a0a3923ca40b2463"
+    },
+    {
+      "doc_id": "dou-salary-winter-2026",
+      "format": "html",
+      "blocks": 107,
+      "chars": 15014,
+      "sha256": "b085be921cda670d"
+    },
+    {
+      "doc_id": "dou-salary-summer-2026",
+      "format": "html",
+      "blocks": 103,
+      "chars": 17167,
+      "sha256": "40fc49c7540dcaa6"
+    },
+    {
+      "doc_id": "forbes-median-salary-2026",
+      "format": "html",
+      "blocks": 87,
+      "chars": 7655,
+      "sha256": "8d05839cd0ee0c7e"
+    },
+    {
+      "doc_id": "buhplatforma-fop3-2026",
+      "format": "html",
+      "blocks": 13,
+      "chars": 1032,
+      "sha256": "d415ccbc12324822"
+    },
+    {
+      "doc_id": "monobank-fop3-2026",
+      "format": "html",
+      "blocks": 68,
+      "chars": 5366,
+      "sha256": "8dc3e8ca1332010f"
+    },
+    {
+      "doc_id": "djinni-188528",
+      "format": "md",
+      "blocks": 38,
+      "chars": 1280,
+      "sha256": "9f2ff19781061e7a"
+    },
+    {
+      "doc_id": "djinni-421582",
+      "format": "md",
+      "blocks": 33,
+      "chars": 1006,
+      "sha256": "650001fcfc4180cc"
+    },
+    {
+      "doc_id": "djinni-529314",
+      "format": "md",
+      "blocks": 39,
+      "chars": 2689,
+      "sha256": "79b57bd561f81aec"
+    },
+    {
+      "doc_id": "djinni-632454",
+      "format": "md",
+      "blocks": 53,
+      "chars": 1935,
+      "sha256": "fe2b6f74336ca5ad"
+    },
+    {
+      "doc_id": "djinni-690808",
+      "format": "md",
+      "blocks": 49,
+      "chars": 2141,
+      "sha256": "cbabb7a4f18c6bc4"
+    },
+    {
+      "doc_id": "djinni-692529",
+      "format": "md",
+      "blocks": 32,
+      "chars": 1320,
+      "sha256": "e56fbb21ce73d586"
+    },
+    {
+      "doc_id": "djinni-693729",
+      "format": "md",
+      "blocks": 57,
+      "chars": 2641,
+      "sha256": "4517f2db702cf6c9"
+    },
+    {
+      "doc_id": "djinni-746003",
+      "format": "md",
+      "blocks": 80,
+      "chars": 4948,
+      "sha256": "3024dee1d39902e3"
+    },
+    {
+      "doc_id": "djinni-777758",
+      "format": "md",
+      "blocks": 69,
+      "chars": 2935,
+      "sha256": "5b93b3a43b40032e"
+    },
+    {
+      "doc_id": "djinni-786559",
+      "format": "md",
+      "blocks": 58,
+      "chars": 2789,
+      "sha256": "e22633650ef421a7"
+    },
+    {
+      "doc_id": "djinni-787644",
+      "format": "md",
+      "blocks": 50,
+      "chars": 3190,
+      "sha256": "9746b2cf952f8fe7"
+    },
+    {
+      "doc_id": "djinni-790649",
+      "format": "md",
+      "blocks": 55,
+      "chars": 1998,
+      "sha256": "1cbecfacf6effe8a"
+    },
+    {
+      "doc_id": "djinni-796730",
+      "format": "md",
+      "blocks": 44,
+      "chars": 2055,
+      "sha256": "9569130a0316117f"
+    },
+    {
+      "doc_id": "djinni-812977",
+      "format": "md",
+      "blocks": 57,
+      "chars": 4387,
+      "sha256": "fd2b9c342b798fb2"
+    },
+    {
+      "doc_id": "djinni-815563",
+      "format": "md",
+      "blocks": 71,
+      "chars": 3233,
+      "sha256": "f3b6a4652e20d850"
+    },
+    {
+      "doc_id": "djinni-818600",
+      "format": "md",
+      "blocks": 63,
+      "chars": 3059,
+      "sha256": "8722d6ab96ec1fd2"
+    },
+    {
+      "doc_id": "djinni-827023",
+      "format": "md",
+      "blocks": 65,
+      "chars": 3864,
+      "sha256": "4702591022c96586"
+    },
+    {
+      "doc_id": "djinni-831567",
+      "format": "md",
+      "blocks": 120,
+      "chars": 11029,
+      "sha256": "a8e78d7a3bc8a456"
+    },
+    {
+      "doc_id": "djinni-831661",
+      "format": "md",
+      "blocks": 82,
+      "chars": 5267,
+      "sha256": "f7d98f7ac6289e79"
+    },
+    {
+      "doc_id": "djinni-832027",
+      "format": "md",
+      "blocks": 58,
+      "chars": 3656,
+      "sha256": "d6aee5cd6ffbe14a"
+    },
+    {
+      "doc_id": "djinni-832194",
+      "format": "md",
+      "blocks": 41,
+      "chars": 7183,
+      "sha256": "1ec5b5866f66bd5b"
+    },
+    {
+      "doc_id": "djinni-833910",
+      "format": "md",
+      "blocks": 45,
+      "chars": 2098,
+      "sha256": "75b88c30636063e6"
+    },
+    {
+      "doc_id": "djinni-835842",
+      "format": "md",
+      "blocks": 59,
+      "chars": 1968,
+      "sha256": "ab84961441d9dea8"
+    },
+    {
+      "doc_id": "djinni-836394",
+      "format": "md",
+      "blocks": 42,
+      "chars": 1032,
+      "sha256": "5d9a9c07f602cb5b"
+    },
+    {
+      "doc_id": "djinni-836416",
+      "format": "md",
+      "blocks": 57,
+      "chars": 3972,
+      "sha256": "c24a6098f776687b"
+    },
+    {
+      "doc_id": "djinni-836696",
+      "format": "md",
+      "blocks": 75,
+      "chars": 3539,
+      "sha256": "e33835f97a2be9db"
+    },
+    {
+      "doc_id": "djinni-837189",
+      "format": "md",
+      "blocks": 60,
+      "chars": 2988,
+      "sha256": "54f151a649315f7b"
+    },
+    {
+      "doc_id": "djinni-839405",
+      "format": "md",
+      "blocks": 50,
+      "chars": 2249,
+      "sha256": "0ecf477cea22192d"
+    },
+    {
+      "doc_id": "djinni-840647",
+      "format": "md",
+      "blocks": 59,
+      "chars": 3239,
+      "sha256": "d23b887bbfc64c00"
+    },
+    {
+      "doc_id": "djinni-840665",
+      "format": "md",
+      "blocks": 75,
+      "chars": 3894,
+      "sha256": "12e864c7a00b6646"
+    },
+    {
+      "doc_id": "djinni-841858",
+      "format": "md",
+      "blocks": 26,
+      "chars": 1439,
+      "sha256": "6b1107fd5406cfdd"
+    },
+    {
+      "doc_id": "djinni-842276",
+      "format": "md",
+      "blocks": 79,
+      "chars": 5967,
+      "sha256": "f016406b6955cba9"
+    },
+    {
+      "doc_id": "djinni-843405",
+      "format": "md",
+      "blocks": 53,
+      "chars": 1572,
+      "sha256": "a1bd3319cc7c9562"
+    },
+    {
+      "doc_id": "djinni-843481",
+      "format": "md",
+      "blocks": 64,
+      "chars": 3724,
+      "sha256": "89550a7af06e4f59"
+    },
+    {
+      "doc_id": "djinni-843700",
+      "format": "md",
+      "blocks": 60,
+      "chars": 2867,
+      "sha256": "afc1fbdb4808c01f"
+    },
+    {
+      "doc_id": "djinni-844357",
+      "format": "md",
+      "blocks": 61,
+      "chars": 3008,
+      "sha256": "09141044e40c3ea9"
+    },
+    {
+      "doc_id": "djinni-844740",
+      "format": "md",
+      "blocks": 57,
+      "chars": 3177,
+      "sha256": "a0395209b5fd35a8"
+    },
+    {
+      "doc_id": "djinni-844825",
+      "format": "md",
+      "blocks": 65,
+      "chars": 4578,
+      "sha256": "235211502698ff69"
+    },
+    {
+      "doc_id": "djinni-845118",
+      "format": "md",
+      "blocks": 85,
+      "chars": 5280,
+      "sha256": "40a8652833fa8bab"
+    },
+    {
+      "doc_id": "djinni-845312",
+      "format": "md",
+      "blocks": 42,
+      "chars": 1405,
+      "sha256": "e70756bc5481a15b"
+    },
+    {
+      "doc_id": "djinni-845710",
+      "format": "md",
+      "blocks": 88,
+      "chars": 5549,
+      "sha256": "b4298871825118fb"
+    },
+    {
+      "doc_id": "djinni-846504",
+      "format": "md",
+      "blocks": 42,
+      "chars": 1411,
+      "sha256": "e9a957de20348215"
+    },
+    {
+      "doc_id": "djinni-847368",
+      "format": "md",
+      "blocks": 55,
+      "chars": 2255,
+      "sha256": "c0f7c707a935881b"
+    },
+    {
+      "doc_id": "djinni-847608",
+      "format": "md",
+      "blocks": 75,
+      "chars": 6696,
+      "sha256": "da66bc0fca4dcc64"
+    },
+    {
+      "doc_id": "djinni-848030",
+      "format": "md",
+      "blocks": 64,
+      "chars": 4477,
+      "sha256": "aa8864b128ed8919"
+    },
+    {
+      "doc_id": "djinni-848131",
+      "format": "md",
+      "blocks": 59,
+      "chars": 2077,
+      "sha256": "63206b5176ced4d7"
+    },
+    {
+      "doc_id": "djinni-848243",
+      "format": "md",
+      "blocks": 55,
+      "chars": 2118,
+      "sha256": "4be41340ea60a827"
+    },
+    {
+      "doc_id": "djinni-848477",
+      "format": "md",
+      "blocks": 61,
+      "chars": 3154,
+      "sha256": "27e13664ce0b8c94"
+    },
+    {
+      "doc_id": "djinni-848816",
+      "format": "md",
+      "blocks": 83,
+      "chars": 4693,
+      "sha256": "9a0ebc34eb20c9a2"
+    },
+    {
+      "doc_id": "djinni-848933",
+      "format": "md",
+      "blocks": 65,
+      "chars": 3766,
+      "sha256": "dcd17a48aa46cefa"
+    },
+    {
+      "doc_id": "djinni-849142",
+      "format": "md",
+      "blocks": 66,
+      "chars": 5011,
+      "sha256": "6995b607f203ce15"
+    },
+    {
+      "doc_id": "djinni-850041",
+      "format": "md",
+      "blocks": 42,
+      "chars": 1873,
+      "sha256": "cec9d041782c1d2a"
+    },
+    {
+      "doc_id": "djinni-850137",
+      "format": "md",
+      "blocks": 52,
+      "chars": 1638,
+      "sha256": "c6a14e6fe6636a24"
+    },
+    {
+      "doc_id": "djinni-850718",
+      "format": "md",
+      "blocks": 41,
+      "chars": 1318,
+      "sha256": "6189e7e67324cee1"
+    },
+    {
+      "doc_id": "djinni-851194",
+      "format": "md",
+      "blocks": 52,
+      "chars": 2878,
+      "sha256": "68e905657849c126"
+    },
+    {
+      "doc_id": "djinni-851611",
+      "format": "md",
+      "blocks": 40,
+      "chars": 1995,
+      "sha256": "b2a4d3c1003c4b33"
+    },
+    {
+      "doc_id": "djinni-851645",
+      "format": "md",
+      "blocks": 56,
+      "chars": 1997,
+      "sha256": "e6fb212bba13c9cd"
+    },
+    {
+      "doc_id": "djinni-851888",
+      "format": "md",
+      "blocks": 36,
+      "chars": 2137,
+      "sha256": "c85c42f6f24acfc6"
+    },
+    {
+      "doc_id": "djinni-851929",
+      "format": "md",
+      "blocks": 37,
+      "chars": 2372,
+      "sha256": "742604d04fca808a"
+    },
+    {
+      "doc_id": "djinni-852328",
+      "format": "md",
+      "blocks": 50,
+      "chars": 2310,
+      "sha256": "1e6868327dff9932"
+    },
+    {
+      "doc_id": "djinni-852343",
+      "format": "md",
+      "blocks": 98,
+      "chars": 5311,
+      "sha256": "4cc13b8cb464aa92"
+    },
+    {
+      "doc_id": "djinni-852371",
+      "format": "md",
+      "blocks": 56,
+      "chars": 3022,
+      "sha256": "3489e15fb71d5a9e"
+    },
+    {
+      "doc_id": "djinni-852585",
+      "format": "md",
+      "blocks": 74,
+      "chars": 2807,
+      "sha256": "5ceec1aaa4d751f9"
+    },
+    {
+      "doc_id": "djinni-852782",
+      "format": "md",
+      "blocks": 52,
+      "chars": 1818,
+      "sha256": "fc1aa7c1dfc9710a"
+    },
+    {
+      "doc_id": "djinni-852872",
+      "format": "md",
+      "blocks": 25,
+      "chars": 2304,
+      "sha256": "987ac55d42a99915"
+    },
+    {
+      "doc_id": "djinni-853129",
+      "format": "md",
+      "blocks": 35,
+      "chars": 1759,
+      "sha256": "339a1b5446851101"
+    },
+    {
+      "doc_id": "djinni-853134",
+      "format": "md",
+      "blocks": 51,
+      "chars": 2520,
+      "sha256": "71f88230754d8cd1"
+    },
+    {
+      "doc_id": "djinni-853357",
+      "format": "md",
+      "blocks": 72,
+      "chars": 3765,
+      "sha256": "b7d287002f78127a"
+    },
+    {
+      "doc_id": "djinni-853381",
+      "format": "md",
+      "blocks": 81,
+      "chars": 3780,
+      "sha256": "142584d8d8b28677"
+    },
+    {
+      "doc_id": "djinni-853382",
+      "format": "md",
+      "blocks": 63,
+      "chars": 2750,
+      "sha256": "292909f86d45090e"
+    },
+    {
+      "doc_id": "djinni-853401",
+      "format": "md",
+      "blocks": 78,
+      "chars": 4694,
+      "sha256": "cf8065ed80bf50a5"
+    },
+    {
+      "doc_id": "djinni-853498",
+      "format": "md",
+      "blocks": 49,
+      "chars": 3018,
+      "sha256": "63f829925573c868"
+    },
+    {
+      "doc_id": "djinni-853510",
+      "format": "md",
+      "blocks": 42,
+      "chars": 1872,
+      "sha256": "382666ece97965de"
+    },
+    {
+      "doc_id": "djinni-853526",
+      "format": "md",
+      "blocks": 40,
+      "chars": 1434,
+      "sha256": "b6ce2d86f5871754"
+    },
+    {
+      "doc_id": "djinni-853528",
+      "format": "md",
+      "blocks": 41,
+      "chars": 1456,
+      "sha256": "6e933770c2fd9338"
+    },
+    {
+      "doc_id": "djinni-853616",
+      "format": "md",
+      "blocks": 63,
+      "chars": 2032,
+      "sha256": "7b47979d8233e7d0"
+    },
+    {
+      "doc_id": "djinni-853622",
+      "format": "md",
+      "blocks": 70,
+      "chars": 4259,
+      "sha256": "2789435b4be55f1a"
+    },
+    {
+      "doc_id": "djinni-853647",
+      "format": "md",
+      "blocks": 31,
+      "chars": 1232,
+      "sha256": "0feb2ebc50e2e6c3"
+    },
+    {
+      "doc_id": "djinni-853857",
+      "format": "md",
+      "blocks": 46,
+      "chars": 1875,
+      "sha256": "34e32eb5b3913bfb"
+    },
+    {
+      "doc_id": "djinni-853892",
+      "format": "md",
+      "blocks": 64,
+      "chars": 2777,
+      "sha256": "e9f62c371e6d322e"
+    },
+    {
+      "doc_id": "djinni-854098",
+      "format": "md",
+      "blocks": 35,
+      "chars": 3128,
+      "sha256": "5129b4ecb0162752"
+    },
+    {
+      "doc_id": "djinni-854135",
+      "format": "md",
+      "blocks": 37,
+      "chars": 2665,
+      "sha256": "25735ecb67384012"
+    },
+    {
+      "doc_id": "djinni-854141",
+      "format": "md",
+      "blocks": 59,
+      "chars": 2516,
+      "sha256": "5537d863b2428b3c"
+    },
+    {
+      "doc_id": "djinni-854278",
+      "format": "md",
+      "blocks": 62,
+      "chars": 4554,
+      "sha256": "77016dd906558db8"
+    },
+    {
+      "doc_id": "djinni-854551",
+      "format": "md",
+      "blocks": 42,
+      "chars": 1772,
+      "sha256": "d6da09cb99966a83"
+    },
+    {
+      "doc_id": "djinni-854706",
+      "format": "md",
+      "blocks": 27,
+      "chars": 4002,
+      "sha256": "58968b67fc13288a"
+    },
+    {
+      "doc_id": "djinni-854707",
+      "format": "md",
+      "blocks": 29,
+      "chars": 4171,
+      "sha256": "64bb911d5c59635b"
+    },
+    {
+      "doc_id": "djinni-854780",
+      "format": "md",
+      "blocks": 49,
+      "chars": 3407,
+      "sha256": "9f16a9c94c7bcb72"
+    },
+    {
+      "doc_id": "djinni-854853",
+      "format": "md",
+      "blocks": 41,
+      "chars": 4321,
+      "sha256": "6a0691dc1610ae08"
+    },
+    {
+      "doc_id": "djinni-855030",
+      "format": "md",
+      "blocks": 78,
+      "chars": 3556,
+      "sha256": "892d0bdd3bac61f6"
+    },
+    {
+      "doc_id": "djinni-855072",
+      "format": "md",
+      "blocks": 51,
+      "chars": 3163,
+      "sha256": "997cbadf599e6b22"
+    },
+    {
+      "doc_id": "djinni-855096",
+      "format": "md",
+      "blocks": 75,
+      "chars": 5041,
+      "sha256": "2dc934fa7ad01bb4"
+    },
+    {
+      "doc_id": "djinni-855110",
+      "format": "md",
+      "blocks": 64,
+      "chars": 3885,
+      "sha256": "f0de78ba350ddf18"
+    },
+    {
+      "doc_id": "djinni-855111",
+      "format": "md",
+      "blocks": 52,
+      "chars": 2417,
+      "sha256": "2d78c2492d0cc105"
+    },
+    {
+      "doc_id": "djinni-855158",
+      "format": "md",
+      "blocks": 37,
+      "chars": 1367,
+      "sha256": "10a9589fbd70fffc"
+    },
+    {
+      "doc_id": "djinni-855183",
+      "format": "md",
+      "blocks": 48,
+      "chars": 2215,
+      "sha256": "efeed7aa22c26765"
+    },
+    {
+      "doc_id": "djinni-855204",
+      "format": "md",
+      "blocks": 45,
+      "chars": 2718,
+      "sha256": "b2ca8266b3edb212"
+    },
+    {
+      "doc_id": "djinni-855232",
+      "format": "md",
+      "blocks": 64,
+      "chars": 3720,
+      "sha256": "148f627e9277b7ac"
+    },
+    {
+      "doc_id": "djinni-855245",
+      "format": "md",
+      "blocks": 61,
+      "chars": 3015,
+      "sha256": "a0075d5bc79df5a1"
+    },
+    {
+      "doc_id": "djinni-855289",
+      "format": "md",
+      "blocks": 53,
+      "chars": 2366,
+      "sha256": "a88df7a11d6644f5"
+    },
+    {
+      "doc_id": "djinni-855290",
+      "format": "md",
+      "blocks": 59,
+      "chars": 3125,
+      "sha256": "b12ed25819df14f5"
+    },
+    {
+      "doc_id": "djinni-855303",
+      "format": "md",
+      "blocks": 52,
+      "chars": 2542,
+      "sha256": "d743a86a024f4b20"
+    },
+    {
+      "doc_id": "djinni-855313",
+      "format": "md",
+      "blocks": 52,
+      "chars": 2465,
+      "sha256": "9e116d548d55f8e0"
+    },
+    {
+      "doc_id": "djinni-855315",
+      "format": "md",
+      "blocks": 48,
+      "chars": 3699,
+      "sha256": "edbdab01f043ce1d"
+    },
+    {
+      "doc_id": "djinni-855321",
+      "format": "md",
+      "blocks": 75,
+      "chars": 5408,
+      "sha256": "3d57225c37ec30e4"
+    },
+    {
+      "doc_id": "djinni-855390",
+      "format": "md",
+      "blocks": 59,
+      "chars": 3117,
+      "sha256": "274d77dc887739b1"
+    },
+    {
+      "doc_id": "djinni-855396",
+      "format": "md",
+      "blocks": 26,
+      "chars": 2469,
+      "sha256": "c0bf29633f09bd8b"
+    },
+    {
+      "doc_id": "djinni-855408",
+      "format": "md",
+      "blocks": 47,
+      "chars": 1862,
+      "sha256": "a114c3e7f3db6904"
+    },
+    {
+      "doc_id": "djinni-855416",
+      "format": "md",
+      "blocks": 65,
+      "chars": 4024,
+      "sha256": "4f6ed55967f66152"
+    },
+    {
+      "doc_id": "djinni-855418",
+      "format": "md",
+      "blocks": 68,
+      "chars": 4206,
+      "sha256": "d77f8f274fdfaf11"
+    },
+    {
+      "doc_id": "djinni-855435",
+      "format": "md",
+      "blocks": 41,
+      "chars": 1339,
+      "sha256": "88c06d4550ff194f"
+    },
+    {
+      "doc_id": "djinni-855437",
+      "format": "md",
+      "blocks": 43,
+      "chars": 1718,
+      "sha256": "f8de19d9622a0e4c"
+    },
+    {
+      "doc_id": "djinni-855439",
+      "format": "md",
+      "blocks": 70,
+      "chars": 3741,
+      "sha256": "2078bc84b413baf5"
+    },
+    {
+      "doc_id": "djinni-855446",
+      "format": "md",
+      "blocks": 68,
+      "chars": 2918,
+      "sha256": "2e4ba035e0cae6ca"
+    },
+    {
+      "doc_id": "djinni-855447",
+      "format": "md",
+      "blocks": 55,
+      "chars": 4048,
+      "sha256": "a1f89aa0069a993a"
+    },
+    {
+      "doc_id": "djinni-855500",
+      "format": "md",
+      "blocks": 55,
+      "chars": 4095,
+      "sha256": "5ea7a0f2c9900be6"
+    },
+    {
+      "doc_id": "djinni-855529",
+      "format": "md",
+      "blocks": 43,
+      "chars": 2543,
+      "sha256": "79f1a0724554b9d0"
+    },
+    {
+      "doc_id": "djinni-855550",
+      "format": "md",
+      "blocks": 36,
+      "chars": 2498,
+      "sha256": "84e65f6ad4678785"
+    },
+    {
+      "doc_id": "djinni-855553",
+      "format": "md",
+      "blocks": 41,
+      "chars": 2835,
+      "sha256": "200a160194ca4825"
+    },
+    {
+      "doc_id": "djinni-855557",
+      "format": "md",
+      "blocks": 61,
+      "chars": 2703,
+      "sha256": "4b94be655dd33782"
+    },
+    {
+      "doc_id": "djinni-855564",
+      "format": "md",
+      "blocks": 46,
+      "chars": 4635,
+      "sha256": "72b427fd914eaa6e"
+    },
+    {
+      "doc_id": "djinni-855567",
+      "format": "md",
+      "blocks": 49,
+      "chars": 3469,
+      "sha256": "8c715e765d0c3ff2"
+    },
+    {
+      "doc_id": "djinni-855588",
+      "format": "md",
+      "blocks": 65,
+      "chars": 1664,
+      "sha256": "790331b03d7346e4"
+    },
+    {
+      "doc_id": "djinni-855622",
+      "format": "md",
+      "blocks": 67,
+      "chars": 3806,
+      "sha256": "9f4a201d4f0e1b34"
+    },
+    {
+      "doc_id": "djinni-855631",
+      "format": "md",
+      "blocks": 56,
+      "chars": 4092,
+      "sha256": "9510bf118a307d28"
+    },
+    {
+      "doc_id": "djinni-855640",
+      "format": "md",
+      "blocks": 63,
+      "chars": 2912,
+      "sha256": "3196da7d00856f74"
+    },
+    {
+      "doc_id": "djinni-855655",
+      "format": "md",
+      "blocks": 71,
+      "chars": 2644,
+      "sha256": "fe9dbf6b4cb381d7"
+    },
+    {
+      "doc_id": "djinni-855672",
+      "format": "md",
+      "blocks": 58,
+      "chars": 2708,
+      "sha256": "6d03ec2b82b5b317"
+    },
+    {
+      "doc_id": "djinni-855687",
+      "format": "md",
+      "blocks": 49,
+      "chars": 2854,
+      "sha256": "b9421ee93c7f564a"
+    },
+    {
+      "doc_id": "djinni-855688",
+      "format": "md",
+      "blocks": 50,
+      "chars": 2343,
+      "sha256": "9f76d90ba35a95fa"
+    },
+    {
+      "doc_id": "djinni-855692",
+      "format": "md",
+      "blocks": 55,
+      "chars": 3929,
+      "sha256": "504d579652ab9156"
+    },
+    {
+      "doc_id": "djinni-855697",
+      "format": "md",
+      "blocks": 60,
+      "chars": 3009,
+      "sha256": "7b598bf2bbd31037"
+    },
+    {
+      "doc_id": "djinni-855698",
+      "format": "md",
+      "blocks": 27,
+      "chars": 1825,
+      "sha256": "223aae0d6b200a19"
+    },
+    {
+      "doc_id": "djinni-855699",
+      "format": "md",
+      "blocks": 32,
+      "chars": 4470,
+      "sha256": "3b445bfd264c3035"
+    },
+    {
+      "doc_id": "djinni-855706",
+      "format": "md",
+      "blocks": 71,
+      "chars": 2668,
+      "sha256": "bfe6a1b2b45e1321"
+    },
+    {
+      "doc_id": "djinni-855719",
+      "format": "md",
+      "blocks": 59,
+      "chars": 5061,
+      "sha256": "df18c690a7df1b4c"
+    },
+    {
+      "doc_id": "djinni-855760",
+      "format": "md",
+      "blocks": 71,
+      "chars": 5207,
+      "sha256": "2923f85cb38d6756"
+    },
+    {
+      "doc_id": "djinni-855793",
+      "format": "md",
+      "blocks": 70,
+      "chars": 4588,
+      "sha256": "5e0ac73f5e69d307"
+    },
+    {
+      "doc_id": "djinni-855795",
+      "format": "md",
+      "blocks": 50,
+      "chars": 2068,
+      "sha256": "618a010859c380c4"
+    },
+    {
+      "doc_id": "djinni-855800",
+      "format": "md",
+      "blocks": 68,
+      "chars": 4471,
+      "sha256": "638a2694082102aa"
+    },
+    {
+      "doc_id": "djinni-855808",
+      "format": "md",
+      "blocks": 44,
+      "chars": 2699,
+      "sha256": "e43ba497df4c9d4c"
+    },
+    {
+      "doc_id": "djinni-855816",
+      "format": "md",
+      "blocks": 71,
+      "chars": 4438,
+      "sha256": "6150f5611efa246e"
+    },
+    {
+      "doc_id": "djinni-855819",
+      "format": "md",
+      "blocks": 37,
+      "chars": 2433,
+      "sha256": "2e15384451c16f98"
+    },
+    {
+      "doc_id": "djinni-855838",
+      "format": "md",
+      "blocks": 88,
+      "chars": 4085,
+      "sha256": "f414911a867e5b11"
+    },
+    {
+      "doc_id": "djinni-855849",
+      "format": "md",
+      "blocks": 73,
+      "chars": 5762,
+      "sha256": "1f4745fb01a00e71"
+    },
+    {
+      "doc_id": "djinni-855854",
+      "format": "md",
+      "blocks": 76,
+      "chars": 4659,
+      "sha256": "483cf598e465fa43"
+    },
+    {
+      "doc_id": "djinni-855855",
+      "format": "md",
+      "blocks": 49,
+      "chars": 2709,
+      "sha256": "53c9e8978ef868eb"
+    },
+    {
+      "doc_id": "djinni-855858",
+      "format": "md",
+      "blocks": 90,
+      "chars": 6639,
+      "sha256": "a8dc9fad707eeef9"
+    },
+    {
+      "doc_id": "djinni-855872",
+      "format": "md",
+      "blocks": 81,
+      "chars": 5762,
+      "sha256": "b37baf1b6a58abee"
+    }
+  ]
+}

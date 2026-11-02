@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: install check run quick eval report regress golden corpus
+.PHONY: install check run quick eval report regress golden corpus ingest
 
 install:            ## встановити залежності
 	$(PY) -m pip install -r requirements.txt
@@ -28,3 +28,6 @@ golden:             ## перевірити golden set і згенерувати
 
 corpus:             ## ДЗ2: завантажити довідкові документи з data/sources/manifest.yaml у data/docs/
 	$(PY) scripts/fetch_corpus.py
+
+ingest:             ## ДЗ2: вакансії → Markdown, документи → очищені блоки (data/processed/), дедуплікація
+	$(PY) scripts/build_vacancy_md.py && $(PY) -m rag.ingest

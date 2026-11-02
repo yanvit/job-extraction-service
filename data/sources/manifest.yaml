@@ -14,6 +14,7 @@ documents:
   lang: uk
   version: чинна редакція на дату завантаження
   license: public-domain
+  content_selector: '#article'
 - id: kpmg-diia-city-2022
   title: 'KPMG: Diia City — огляд правового режиму (2022)'
   url: https://assets.kpmg.com/content/dam/kpmg/ua/pdf/2022/02/Diia-City-ua.pdf
@@ -38,6 +39,7 @@ documents:
   lang: uk
   version: 2025-02
   license: copyrighted
+  content_selector: 'div.desc'
 - id: prokadry-gig-fop
   title: 'ПроКадри: гіг-контракти, ФОП і зарплати — правила для резидентів Дія.City'
   url: https://prokadry.com.ua/news/129652-gig-kontrakty-fop-i-zarplaty-iaki-pravyla-diiut-dlia-rezydentiv-diia-city
@@ -46,6 +48,7 @@ documents:
   lang: uk
   version: '2026'
   license: copyrighted
+  content_selector: '.article-content'
 - id: devua-diia-city-how-to
   title: 'dev.ua: як стати резидентом Дія Сіті'
   url: https://dev.ua/news/yak-staty-rezydentom-diia-city
@@ -54,6 +57,7 @@ documents:
   lang: uk
   version: '2022'
   license: copyrighted
+  content_selector: '.article__body'
 - id: dou-salary-winter-2026
   title: 'DOU: зарплати українських розробників — зима 2026'
   url: https://dou.ua/lenta/articles/salary-report-devs-winter-2026/
@@ -62,6 +66,7 @@ documents:
   lang: uk
   version: 2026-winter
   license: copyrighted
+  content_selector: 'article.b-typo_post'
 - id: dou-salary-summer-2026
   title: 'DOU: зарплати українських розробників — літо 2026'
   url: https://dou.ua/lenta/articles/salary-report-devs-summer-2026/
@@ -70,6 +75,7 @@ documents:
   lang: uk
   version: 2026-summer
   license: copyrighted
+  content_selector: 'article.b-typo_post'
 - id: forbes-median-salary-2026
   title: 'Forbes Україна: медіана зарплат IT-розробників зросла до $3450 (за DOU, січень 2026)'
   url: https://forbes.ua/news/mediana-zarplat-it-rozrobnikiv-zrosla-do-3450-khto-z-ukrainskikh-aytivtsiv-zaroblyae-naybilshe-doslidzhennya-dou-12012026-35431
@@ -78,6 +84,8 @@ documents:
   lang: uk
   version: 2026-01
   license: copyrighted
+  content_selector: 'article.c-post'
+  drop_patterns: ['^Інвестгід', '^Що два тижні на вашій пошті', '^Заощаджуйте', '^Купуйте річну передплату', '^Олександр Пикало$', '^Forbes$', '^12 січня$']
 - id: buhplatforma-fop3-2026
   title: 'Бухгалтер 911: ФОП 3 група у 2026 році — ліміти та податки'
   url: https://buhplatforma.com.ua/news/109482-fop-3-grupa-u-2026-rotsi-limity-ta-podatky
@@ -86,6 +94,7 @@ documents:
   lang: uk
   version: '2026'
   license: copyrighted
+  content_selector: '.article-content'
 - id: monobank-fop3-2026
   title: 'monobank: ФОП 3 група у 2026 році'
   url: https://monobank.ua/knowledge-base/fop/fop-3-grupa-2026
@@ -94,3 +103,4 @@ documents:
   lang: uk
   version: '2026'
   license: copyrighted
+  content_selector: '.article-content'
