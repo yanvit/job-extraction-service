@@ -1,0 +1,4 @@
+version: v1
+date: 2026-11-23
+author: Vitalii
+summary: LLM-суддя (Claude Opus 5.5) — correctness проти еталонної відповіді (correct/partial/incorrect) і faithfulness кожного твердження щодо процитованих джерел.

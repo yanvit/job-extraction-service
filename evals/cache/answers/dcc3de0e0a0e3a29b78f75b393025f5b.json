@@ -1,0 +1,20 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Lead Rust Engineer (djinni-854780) вимагає практичного комерційного досвіду з Rust, включно з async-сервісами (наприклад, Tokio, Axum або Actix).\",\"sources\":[\"S1\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Lead Rust Engineer (djinni-854780) вимагає практичного комерційного досвіду з Rust, включно з async-сервісами (наприклад, Tokio, Axum або Actix).",
+    "sources": [
+     "S1"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 2148,
+ "output_tokens": 102,
+ "latency_ms": 1523,
+ "stop_reason": "end_turn"
+}

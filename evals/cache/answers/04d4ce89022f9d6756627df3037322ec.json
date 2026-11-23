@@ -1,0 +1,38 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Flutter Developer (Middle/Senior, волонтерство) вимагає володіння технікою управління станом Provider, Riverpod або Bloc.\",\"sources\":[\"S2\"]},{\"text\":\"Middle Flutter Developer вимагає глибокого розуміння архітектурних паттернів BLoC, Provider, Riverpod тощо.\",\"sources\":[\"S3\"]},{\"text\":\"Senior Flutter developer вимагає впевнених знань фреймворку Bloc.\",\"sources\":[\"S4\"]},{\"text\":\"Flutter Engineer очікує досвід state management, бажано BLoC / Cubit, Riverpod або аналоги.\",\"sources\":[\"S1\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Flutter Developer (Middle/Senior, волонтерство) вимагає володіння технікою управління станом Provider, Riverpod або Bloc.",
+    "sources": [
+     "S2"
+    ]
+   },
+   {
+    "text": "Middle Flutter Developer вимагає глибокого розуміння архітектурних паттернів BLoC, Provider, Riverpod тощо.",
+    "sources": [
+     "S3"
+    ]
+   },
+   {
+    "text": "Senior Flutter developer вимагає впевнених знань фреймворку Bloc.",
+    "sources": [
+     "S4"
+    ]
+   },
+   {
+    "text": "Flutter Engineer очікує досвід state management, бажано BLoC / Cubit, Riverpod або аналоги.",
+    "sources": [
+     "S1"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 3336,
+ "output_tokens": 776,
+ "latency_ms": 3780,
+ "stop_reason": "end_turn"
+}

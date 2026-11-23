@@ -10,6 +10,11 @@
 
 Для порівняння: локальна qwen2.5:3b дає 0.75, Claude Haiku 4.5 — 0.935 при цілих $7.2 за 1000 документів. Деталі в [REPORT.md](REPORT.md).
 
+**ДЗ2 (RAG + evals)** — у тому ж репозиторії. Відповіді на питання про IT-вакансії, зарплати DOU, Дія Сіті і ФОП з цитатами на кожне твердження: 160 документів, hybrid search + rerank, Claude Haiku 5.5.
+- На 29 питаннях: «не знаю» там, де треба, — 100%; правильне джерело — 100%; LLM-суддя — 0.955.
+- $0.55 на 1000 питань; evals у CI.
+- Запуск: `make rag`. Карта вимог — [нижче](#дз2-де-що-шукати), звіт — [REPORT.md](REPORT.md).
+
 ## Де що шукати (вимоги ДЗ → файли)
 
 | Вимога ДЗ | Де в репозиторії |
@@ -31,6 +36,29 @@
 | Вибір для продакшну + умови зміни | `REPORT.md` → «Вибір для продакшну» |
 | Stretch: третя модель / регресія / кеш | Claude Haiku 4.5 у `config.yaml`; `make regress`; `results/cache/` (`jobex/pipeline.py`) |
 | Запуск однією командою, ключі не в коді | `make run` (= `python main.py`), `.env.example`, `.env` у `.gitignore` |
+
+### ДЗ2: де що шукати
+
+| Вимога ДЗ2 | Де в репозиторії |
+|---|---|
+| **Крок 1.** Корпус ≥30 документів, ≥2 формати, без PII + manifest | 149 вакансій (`data/corpus/`, Markdown) + 11 HTML/PDF: `data/sources/manifest.yaml`, завантаження — `make corpus` (`scripts/fetch_corpus.py`) |
+| Ingestion: структура, очищення, дедуплікація | `rag/ingest.py` → `data/processed/ingest_report.json` |
+| Chunking з обґрунтуванням і порівнянням з fixed | `rag/chunking.py`, README → «chunking-стратегія», `data/processed/chunking_comparison.md` |
+| Метадані чанка, файл чанків + manifest | `data/processed/chunks.jsonl` (генерується), `data/processed/chunks_manifest.json` |
+| **Крок 2.** Embeddings → векторна база | `rag/index.py` (e5-small → Qdrant, кеш ембеддингів) |
+| Hybrid search, reranking, фільтри за метаданими | `rag/bm25.py`, `rag/search.py` |
+| Якість пошуку: 15 питань, recall@k / MRR, ≥2 конфігурації | `evals/retrieval_questions.yaml`, `rag/eval_retrieval.py` → `evals/results/retrieval.md` |
+| **Крок 3.** Відповідь лише з чанків, цитати на кожне твердження | `rag/answer.py` (перевірка цитат у коді) |
+| Бюджет токенів на контекст, «не знаю» | `rag/config.yaml` → `answer` (`context_budget_tokens`, `min_rerank_score`), `status: not_found` |
+| Промпти з версіями і changelog | `prompts/rag/v1…v3/`, `prompts/rag/CHANGELOG.md`; суддя — `prompts/judge/` |
+| **Крок 4.** Тестсет ≥20 з відповідями і джерелами, без відповіді, пастки | `evals/testset.yaml` (29: 17 + 5 пасток + 7 без відповіді) |
+| Детерміновані scoring-функції | `evals/scoring.py` (+ `evals/test_scoring.py`) |
+| LLM-as-a-judge з калібруванням на ≥10 ручних оцінках | `evals/scoring.py`, `evals/calibrate.py`, лист `evals/calibration/sheet.yaml` (18 відповідей) |
+| Faithfulness | `evals/scoring.py` → `judge_faithfulness` (кожне твердження проти своїх джерел) |
+| Evals у CI з порогом | `.github/workflows/evals.yml`, пороги — `evals/config.yaml` |
+| REPORT: метрики, 3–5 помилок, що далі | `REPORT.md` → «Звіт ДЗ2» |
+| Вартість на 1000 питань | `REPORT.md`, `evals/results/metrics.md` |
+| Stretch: contextual chunk headers, кеш embeddings | `rag/chunking.py` (`embed_text`), `rag/index.py` |
 
 ## Швидкий старт
 
@@ -190,7 +218,7 @@ python -m rag.answer "Які Java-вакансії вимагають Kafka?" --
 python -m rag.answer "..." --json      # джерела, бали, токени, вартість, версія і хеш промпту
 ```
 
-Код: `rag/answer.py`, налаштування — `rag/config.yaml` → `answer`, промпт — [`prompts/rag/v1/`](prompts/rag/v1/) з [CHANGELOG](prompts/rag/CHANGELOG.md).
+Код: `rag/answer.py`, налаштування — `rag/config.yaml` → `answer`, промпт — [`prompts/rag/v3/`](prompts/rag/v3/) (поточний; v1 → v2 → v3 з причинами — у [CHANGELOG](prompts/rag/CHANGELOG.md)).
 
 **Як будується відповідь:**
 1. **Пошук:** hybrid + rerank, топ-8 (найкраща конфігурація з кроку 2), опційно з фільтрами за метаданими.
@@ -210,8 +238,36 @@ python -m rag.answer "..." --json      # джерела, бали, токени,
 
 **Знахідки під час налаштування:**
 - **Thinking з'їдає ліміт.** Haiku 5.5 спершу думає, і ці токени списуються з `max_tokens`. На 1024 складне питання обрізалось ще до JSON, тому тепер ліміт 4096. Обрізана відповідь позначається як `gate: error`, а не як чесне «не знаю».
-- **Вартість і затримка:** ~$0.0005–0.0013 за відповідь, тобто приблизно **$0.8–1 на 1000 питань**. Відмови на порозі безкоштовні. Затримка 3–8 с, на складених питаннях до ~20 с через thinking. Точні цифри по тестсету — у кроці 4.
-- **Відома вада v1:** модель іноді вписує id джерела прямо в текст («(S4)»). Виправимо в v2 разом з результатами evals.
+- **Вартість і затримка (тестсет, 29 питань):** **$0.55 на 1000 питань**, відмови на порозі безкоштовні. Затримка p50 2.9 с, p95 13 с: складені питання довше через thinking.
+- **Вада v1** (модель вписувала id джерела в текст, «(S4)») виправлена у v2. Інші зміни промпту виросли з розбору evals, див. CHANGELOG.
+
+## ДЗ2: тестсет, evals і CI
+
+```bash
+make evals            # 29 питань → відповіді → метрики → пороги (exit 1, якщо нижче порогу)
+make calibrate-export # лист для ручної оцінки відповідей → evals/calibration/sheet.yaml
+make calibrate        # згода LLM-судді з ручною оцінкою → evals/results/calibration.md
+make rag              # усе ДЗ2 однією командою: корпус → чанки → індекс → retrieval eval → evals
+```
+
+- **Тестсет** — [`evals/testset.yaml`](evals/testset.yaml), 29 питань. Кожне має еталонну відповідь, ключові факти, допустимі джерела і дослівну фразу-доказ з документа.
+  - 17 питань з відповіддю.
+  - 5 пасток: застаріла ставка військового збору, дві хвилі DOU з однаковими розділами, стара межа частки ФОП.
+  - 7 без відповіді, серед них підступні («DOU 2019», «ФОП 2 групи», «зарплати в Польщі») і prompt injection.
+- **Scoring** — [`evals/scoring.py`](evals/scoring.py), тести в [`evals/test_scoring.py`](evals/test_scoring.py).
+  - **Детерміновані перевірки:**
+    - «не знаю» там, де треба;
+    - правильний документ серед процитованих;
+    - ключові факти: цифри нормалізуються, «5%» не знаходиться в «15%»;
+    - відсутність типової помилки пастки.
+  - **LLM-суддя** (Claude Opus 5.5, промпти [`prompts/judge/v1/`](prompts/judge/v1/)): правильність проти еталону (correct / partial / incorrect).
+  - **Faithfulness:** кожне твердження окремо перевіряється лише проти тих джерел, які воно саме цитує.
+- **Калібрування судді** — [`evals/calibrate.py`](evals/calibrate.py). Лист містить реальні відповіді плюс навмисно зіпсовані, під нейтральними номерами. Скрипт рахує згоду і Cohen's κ.
+- **Пороги** — [`evals/config.yaml`](evals/config.yaml). Результати: [`evals/results/metrics.md`](evals/results/metrics.md) і [`answers.jsonl`](evals/results/answers.jsonl); прогони v1, v2, v3 — у `evals/results/runs/`.
+- **Кеш** — `evals/cache/`, лежить у git. Ключ — sha256 від моделі, промпту, питання і знайденого контексту. Повторний прогін без змін не викликає API. Змінили промпт — платимо лише за змінені пункти: ~$0.42 за повний прогін із суддею.
+- **CI** — [`.github/workflows/evals.yml`](.github/workflows/evals.yml), на кожен push і PR: тести scoring → корпус → індекс → retrieval eval → evals з порогами. Потрібен секрет `ANTHROPIC_API_KEY` у налаштуваннях репозиторію.
+
+Метрики, порівняння промптів і розбір помилок — у [REPORT.md](REPORT.md).
 
 ## Ключі
 

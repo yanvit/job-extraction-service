@@ -1,0 +1,22 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"claims\":[{\"index\":1,\"supported\":true,\"reason\":\"S2 прямо вказує, що в червні 2026 року медіанна зарплата розробників на Ruby on Rails становить $4500.\"},{\"index\":2,\"supported\":true,\"reason\":\"S2 і S1 підтверджують, що Ruby on Rails лідирує серед фреймворків, а влітку медіана ($4500) вища за зимову ($4400).\"}]}",
+ "data": {
+  "claims": [
+   {
+    "index": 1,
+    "supported": true,
+    "reason": "S2 прямо вказує, що в червні 2026 року медіанна зарплата розробників на Ruby on Rails становить $4500."
+   },
+   {
+    "index": 2,
+    "supported": true,
+    "reason": "S2 і S1 підтверджують, що Ruby on Rails лідирує серед фреймворків, а влітку медіана ($4500) вища за зимову ($4400)."
+   }
+  ]
+ },
+ "input_tokens": 1796,
+ "output_tokens": 337,
+ "latency_ms": 4636,
+ "stop_reason": "end_turn"
+}

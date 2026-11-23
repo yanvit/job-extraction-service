@@ -1,0 +1,20 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Вакансія Lead Rust Engineer вимагає практичного комерційного досвіду з Rust, включно з async-сервісами (наприклад, Tokio, Axum або Actix).\",\"sources\":[\"S1\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Вакансія Lead Rust Engineer вимагає практичного комерційного досвіду з Rust, включно з async-сервісами (наприклад, Tokio, Axum або Actix).",
+    "sources": [
+     "S1"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 1957,
+ "output_tokens": 99,
+ "latency_ms": 1622,
+ "stop_reason": "end_turn"
+}

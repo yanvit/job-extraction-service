@@ -1,0 +1,20 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Роль Data Engineer (id djinni-848477) вимагає практичного досвіду з колонкоорієнтованими базами даних, такими як ClickHouse, Snowflake, Cassandra, BigQuery (багато таблиць з мільйонами записів і більше кожна).\",\"sources\":[\"S1\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Роль Data Engineer (id djinni-848477) вимагає практичного досвіду з колонкоорієнтованими базами даних, такими як ClickHouse, Snowflake, Cassandra, BigQuery (багато таблиць з мільйонами записів і більше кожна).",
+    "sources": [
+     "S1"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 4468,
+ "output_tokens": 130,
+ "latency_ms": 1569,
+ "stop_reason": "end_turn"
+}

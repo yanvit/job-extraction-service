@@ -1,0 +1,16 @@
+# Налаштування evals (ДЗ2, крок 4). CI падає, якщо будь-яка метрика нижче/вище порогу.
+judge:
+  model: claude-opus-5-5     # id з кореневого config.yaml; сильніша модель, ніж та, що відповідає
+  prompt: v1                 # prompts/judge/<version>/
+concurrency: 4
+
+# Пороги — планка якості, нижче якої зміну не можна мержити. Обґрунтування — у REPORT.md.
+thresholds:
+  abstain_accuracy:             {min: 0.90}   # «не знаю» рівно там, де треба
+  hallucination_rate_no_answer: {max: 0.15}   # відповів на питання, відповіді на яке в корпусі немає
+  source_hit:                   {min: 0.85}   # правильний документ серед цитат
+  key_facts:                    {min: 0.80}
+  must_not_ok:                  {min: 1.00}   # жодної «літньої цифри на зимове питання»
+  judge_correct:                {min: 0.80}
+  faithfulness_claims:          {min: 0.90}
+  retrieval_recall@5:           {min: 0.90}   # з evals/results/retrieval.json (make eval-retrieval)

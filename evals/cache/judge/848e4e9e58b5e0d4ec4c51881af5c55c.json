@@ -1,0 +1,17 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"claims\":[{\"index\":1,\"supported\":true,\"reason\":\"У розділі Must have джерела S1 прямо вказано: «Hands-on commercial experience with Rust, including async services (for example Tokio, Axum or Actix)».\"}]}",
+ "data": {
+  "claims": [
+   {
+    "index": 1,
+    "supported": true,
+    "reason": "У розділі Must have джерела S1 прямо вказано: «Hands-on commercial experience with Rust, including async services (for example Tokio, Axum or Actix)»."
+   }
+  ]
+ },
+ "input_tokens": 1181,
+ "output_tokens": 85,
+ "latency_ms": 1504,
+ "stop_reason": "end_turn"
+}

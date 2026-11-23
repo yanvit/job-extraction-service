@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: install check run quick eval report regress golden corpus ingest chunks index eval-retrieval ask
+.PHONY: install check run quick eval report regress golden corpus ingest chunks index eval-retrieval ask evals calibrate-export calibrate rag
 
 install:            ## встановити залежності
 	$(PY) -m pip install -r requirements.txt
@@ -43,3 +43,15 @@ eval-retrieval:     ## ДЗ2: recall@k і MRR на 15 питаннях для ve
 
 ask:                ## ДЗ2: відповідь з джерелами, напр. make ask Q="Який ліміт доходу ФОП 3 групи у 2026?"
 	$(PY) -m rag.answer "$(Q)"
+
+evals:              ## ДЗ2: тестсет → відповіді → детерміновані метрики + LLM-суддя + faithfulness → пороги (exit 1 нижче порогу)
+	$(PY) -m evals.run
+
+calibrate-export:   ## ДЗ2: лист для ручної оцінки відповідей (evals/calibration/sheet.yaml)
+	$(PY) -m evals.calibrate export
+
+calibrate:          ## ДЗ2: згода LLM-судді з ручною оцінкою → evals/results/calibration.md
+	$(PY) -m evals.calibrate score
+
+rag:                ## ДЗ2 однією командою: корпус → чанки → індекс → retrieval eval → RAG evals
+	$(MAKE) corpus chunks index eval-retrieval evals

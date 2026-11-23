@@ -16,6 +16,7 @@ import argparse
 import hashlib
 import json
 import os
+import threading
 import time
 from dataclasses import dataclass
 
@@ -79,15 +80,15 @@ def clean_section(section: str | None) -> str:
     return (section or "").split(" | ")[-1].strip()
 
 
-def source_block(sid: str, chunk: dict) -> str:
-    head = [f"[{sid}] Документ: {chunk['title']}"]
+def source_block(sid: str, chunk: dict, show_doc_id: bool = False) -> str:
+    head = [f"[{sid}] Документ: {chunk['title']}" + (f" (id: {chunk['doc_id']})" if show_doc_id else "")]
     if clean_section(chunk.get("section")):
         head.append(f"Розділ: {clean_section(chunk['section'])}")
     head.append(f"Версія: {chunk.get('version') or '—'} · тип: {chunk['doc_type']}")
     return "\n".join(head) + "\n" + chunk["text"].strip()
 
 
-def pack_context(hits: list, budget_tokens: int, min_score: float) -> tuple[list[dict], int]:
+def pack_context(hits: list, budget_tokens: int, min_score: float, show_doc_id: bool = False) -> tuple[list[dict], int]:
     """Джерела в порядку релевантності, поки влазять у бюджет. Чанк, що не влазить, пропускаємо
     (наступний коротший може влізти); слабкі за min_score не беремо зовсім."""
     sources, used = [], 0
@@ -95,7 +96,7 @@ def pack_context(hits: list, budget_tokens: int, min_score: float) -> tuple[list
         if h.score < min_score:
             continue
         sid = f"S{len(sources) + 1}"
-        block = source_block(sid, h.chunk)
+        block = source_block(sid, h.chunk, show_doc_id)
         t = approx_tokens(block)
         if used + t > budget_tokens:
             continue
@@ -126,12 +127,30 @@ def _model_cfg(model_id: str) -> tuple[dict, dict]:
     return cfg, root.get("defaults", {})
 
 
+def build_client(model_id: str, max_tokens: int | None = None):
+    """Клієнт моделі з кореневого config.yaml (той самий, що в ДЗ1: ретраї, таймаути, structured output)."""
+    try:
+        from dotenv import load_dotenv
+        load_dotenv(ROOT / ".env")
+    except ImportError:
+        pass
+    from jobex.clients import make_client
+    cfg, defaults = _model_cfg(model_id)
+    return make_client({**cfg, **({"max_tokens": max_tokens} if max_tokens else {})}, defaults)
+
+
+def price(model_id: str, tin: int, tout: int) -> float:
+    p = _model_cfg(model_id)[0].get("price_per_mtok", {})
+    return (tin * p.get("input", 0) + tout * p.get("output", 0)) / 1e6
+
+
 class Answerer:
     def __init__(self, retriever=None, client=None, prompt_version: str | None = None, model_id: str | None = None):
         self.model_id = model_id or ACFG["model"]
         self.model_cfg, self._defaults = _model_cfg(self.model_id)
         self.prompt = load_rag_prompt(prompt_version or ACFG["prompt"])
         self._retriever, self._client = retriever, client
+        self._search_lock = threading.Lock()        # torch-моделі пошуку — по одному запиту; LLM-виклики паралельно
 
     @property
     def retriever(self):
@@ -143,24 +162,18 @@ class Answerer:
     @property
     def client(self):
         if self._client is None:
-            try:
-                from dotenv import load_dotenv
-                load_dotenv(ROOT / ".env")
-            except ImportError:
-                pass
-            from jobex.clients import make_client
-            self._client = make_client({**self.model_cfg, "max_tokens": ACFG["max_tokens"]}, self._defaults)
+            self._client = build_client(self.model_id, ACFG["max_tokens"])
         return self._client
 
     def cost(self, tin: int, tout: int) -> float:
-        p = self.model_cfg.get("price_per_mtok", {})
-        return (tin * p.get("input", 0) + tout * p.get("output", 0)) / 1e6
+        return price(self.model_id, tin, tout)
 
     def answer(self, question: str, flt: dict | None = None) -> dict:
         from jobex.clients.base import Sampling
 
         t0 = time.perf_counter()
-        hits = self.retriever.search(question, ACFG["retrieve_mode"], k=ACFG["retrieve_k"], flt=flt)
+        with self._search_lock:
+            hits = self.retriever.search(question, ACFG["retrieve_mode"], k=ACFG["retrieve_k"], flt=flt)
         top = hits[0].score if hits else float("-inf")
         base = {"question": question, "filter": flt, "model": self.model_id, "prompt_version": self.prompt.version,
                 "prompt_sha": self.prompt.sha, "top_score": round(top, 3),
@@ -172,7 +185,8 @@ class Answerer:
                     "sources": [], "context_tokens": 0, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0,
                     "latency_ms": round(1000 * (time.perf_counter() - t0))}
 
-        sources, used = pack_context(hits, ACFG["context_budget_tokens"], ACFG["min_source_score"])
+        sources, used = pack_context(hits, ACFG["context_budget_tokens"], ACFG["min_source_score"],
+                                     show_doc_id=bool(self.prompt.meta.get("show_doc_id")))
         user = self.prompt.render("\n\n".join(s["block"] for s in sources), question)
         resp = self.client.extract(self.prompt.system, user, SCHEMA, Sampling("api_default"))
         clean, dropped = validate(resp.data, {s["sid"] for s in sources})
@@ -185,7 +199,8 @@ class Answerer:
                 "sources": [{k: v for k, v in s.items() if k != "block"} | {"chunk": _cite(s["chunk"])} for s in sources],
                 "context_tokens": used, "input_tokens": resp.input_tokens, "output_tokens": resp.output_tokens,
                 "cost_usd": round(self.cost(resp.input_tokens, resp.output_tokens), 6),
-                "latency_ms": round(1000 * (time.perf_counter() - t0)), "raw": resp.raw_text}
+                "latency_ms": round(1000 * (time.perf_counter() - t0)), "raw": resp.raw_text,
+                "_blocks": {s["sid"]: s["block"] for s in sources}}   # тексти джерел — для faithfulness; у файли не пишемо
 
 
 def _cite(chunk: dict) -> dict:

@@ -43,7 +43,9 @@ def shared_qdrant():
     """Локальний Qdrant блокує папку на один клієнт, тож усі колекції в процесі ділять один."""
     global _QDRANT
     if _QDRANT is None:
+        import atexit
         _QDRANT = qdrant_client()
+        atexit.register(_QDRANT.close)              # закрити до того, як інтерпретатор почне розбирати модулі
     return _QDRANT
 
 

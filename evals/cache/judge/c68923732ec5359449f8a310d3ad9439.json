@@ -1,0 +1,12 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"verdict\":\"partial\",\"reason\":\"The system cites 5% from the newest edition (2025-02), which matches the reference. But it never says that 5% is the current rate and treats 1.5% as an equally valid conflicting figure instead of an outdated one. It also adds a confusing claim about 6.5% versus 5%.\"}",
+ "data": {
+  "verdict": "partial",
+  "reason": "The system cites 5% from the newest edition (2025-02), which matches the reference. But it never says that 5% is the current rate and treats 1.5% as an equally valid conflicting figure instead of an outdated one. It also adds a confusing claim about 6.5% versus 5%."
+ },
+ "input_tokens": 1132,
+ "output_tokens": 397,
+ "latency_ms": 4825,
+ "stop_reason": "end_turn"
+}

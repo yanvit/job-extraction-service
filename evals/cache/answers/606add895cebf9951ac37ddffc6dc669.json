@@ -1,0 +1,20 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Медіанна зарплата розробників у Тернополі за літньою хвилею DOU 2026 становить $3900.\",\"sources\":[\"S1\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Медіанна зарплата розробників у Тернополі за літньою хвилею DOU 2026 становить $3900.",
+    "sources": [
+     "S1"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 4977,
+ "output_tokens": 253,
+ "latency_ms": 1869,
+ "stop_reason": "end_turn"
+}

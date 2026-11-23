@@ -1,0 +1,12 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"verdict\":\"correct\",\"reason\":\"Система правильно назвала вакансію Lead Rust Engineer і вимогу щодо async-сервісів на Tokio, Axum або Actix. Знання Ruby не згадано, але ця деталь другорядна для питання.\"}",
+ "data": {
+  "verdict": "correct",
+  "reason": "Система правильно назвала вакансію Lead Rust Engineer і вимогу щодо async-сервісів на Tokio, Axum або Actix. Знання Ruby не згадано, але ця деталь другорядна для питання."
+ },
+ "input_tokens": 870,
+ "output_tokens": 93,
+ "latency_ms": 6145,
+ "stop_reason": "end_turn"
+}

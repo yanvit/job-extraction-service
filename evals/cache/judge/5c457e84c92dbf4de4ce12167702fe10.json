@@ -1,0 +1,12 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"verdict\":\"correct\",\"reason\":\"Названо ту саму вакансію (djinni 848477) і ті самі бази даних (ClickHouse, Snowflake, Cassandra, BigQuery), що й в еталоні.\"}",
+ "data": {
+  "verdict": "correct",
+  "reason": "Названо ту саму вакансію (djinni 848477) і ті самі бази даних (ClickHouse, Snowflake, Cassandra, BigQuery), що й в еталоні."
+ },
+ "input_tokens": 921,
+ "output_tokens": 79,
+ "latency_ms": 1846,
+ "stop_reason": "end_turn"
+}

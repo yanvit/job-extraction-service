@@ -1,0 +1,20 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"У літній хвилі опитування DOU 2026 медіанна зарплата розробників у Тернополі становила $3900.\",\"sources\":[\"S1\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "У літній хвилі опитування DOU 2026 медіанна зарплата розробників у Тернополі становила $3900.",
+    "sources": [
+     "S1"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 4694,
+ "output_tokens": 271,
+ "latency_ms": 2074,
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,17 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"claims\":[{\"index\":1,\"supported\":true,\"reason\":\"S1 (зима 2026) прямо вказує медіану Ruby on Rails — $4400; S2 також підтверджує $4400 взимку.\"}]}",
+ "data": {
+  "claims": [
+   {
+    "index": 1,
+    "supported": true,
+    "reason": "S1 (зима 2026) прямо вказує медіану Ruby on Rails — $4400; S2 також підтверджує $4400 взимку."
+   }
+  ]
+ },
+ "input_tokens": 1361,
+ "output_tokens": 77,
+ "latency_ms": 2548,
+ "stop_reason": "end_turn"
+}

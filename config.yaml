@@ -26,6 +26,15 @@ models:
     supports_sampling: true
     price_per_mtok: {input: 1.00, output: 5.00}
 
+  - id: claude-opus-5-5             # ДЗ2: LLM-суддя для evals (сильніша модель, ніж та, що відповідає)
+    provider: anthropic
+    model: claude-opus-5-5
+    structured_mode: json_schema
+    supports_sampling: false
+    timeout_s: 180
+    max_tokens: 8000
+    price_per_mtok: {input: 4.00, output: 20.00}
+
   - id: qwen2.5-3b-local            # локальна OSS модель через Ollama
     provider: ollama
     model: qwen2.5:3b

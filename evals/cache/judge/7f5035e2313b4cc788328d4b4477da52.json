@@ -1,0 +1,22 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"claims\":[{\"index\":1,\"supported\":true,\"reason\":\"S2 and S4 both state that the average headcount of employees and gig specialists must be at least nine persons.\"},{\"index\":2,\"supported\":false,\"reason\":\"S3 does list the 9-person requirement, but it does not say the requirement has been in force since 2022 or that it is still in force. That conclusion is the answer's own inference.\"}]}",
+ "data": {
+  "claims": [
+   {
+    "index": 1,
+    "supported": true,
+    "reason": "S2 and S4 both state that the average headcount of employees and gig specialists must be at least nine persons."
+   },
+   {
+    "index": 2,
+    "supported": false,
+    "reason": "S3 does list the 9-person requirement, but it does not say the requirement has been in force since 2022 or that it is still in force. That conclusion is the answer's own inference."
+   }
+  ]
+ },
+ "input_tokens": 2110,
+ "output_tokens": 340,
+ "latency_ms": 4221,
+ "stop_reason": "end_turn"
+}

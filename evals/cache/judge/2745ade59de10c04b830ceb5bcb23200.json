@@ -1,0 +1,17 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"claims\":[{\"index\":1,\"supported\":true,\"reason\":\"Джерело S2 прямо вказує, що в червні 2026 медіанна зарплата розробників на Ruby on Rails становила $4500.\"}]}",
+ "data": {
+  "claims": [
+   {
+    "index": 1,
+    "supported": true,
+    "reason": "Джерело S2 прямо вказує, що в червні 2026 медіанна зарплата розробників на Ruby on Rails становила $4500."
+   }
+  ]
+ },
+ "input_tokens": 1026,
+ "output_tokens": 76,
+ "latency_ms": 1834,
+ "stop_reason": "end_turn"
+}

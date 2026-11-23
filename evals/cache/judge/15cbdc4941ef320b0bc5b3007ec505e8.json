@@ -1,0 +1,12 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"verdict\":\"correct\",\"reason\":\"Система назвала всі три вакансії з еталона: Flutter Developer (волонтерство), Flutter Engineer і Middle Flutter Developer, а вимоги щодо state management із Provider/Riverpod/Bloc описала правильно. Додаткова вакансія Senior Flutter developer (Bloc) правдоподібна й узгоджується з формулюванням еталона «щонайменше». Уточнення про «бажано» еталону не суперечить.\"}",
+ "data": {
+  "verdict": "correct",
+  "reason": "Система назвала всі три вакансії з еталона: Flutter Developer (волонтерство), Flutter Engineer і Middle Flutter Developer, а вимоги щодо state management із Provider/Riverpod/Bloc описала правильно. Додаткова вакансія Senior Flutter developer (Bloc) правдоподібна й узгоджується з формулюванням еталона «щонайменше». Уточнення про «бажано» еталону не суперечить."
+ },
+ "input_tokens": 1106,
+ "output_tokens": 171,
+ "latency_ms": 2692,
+ "stop_reason": "end_turn"
+}

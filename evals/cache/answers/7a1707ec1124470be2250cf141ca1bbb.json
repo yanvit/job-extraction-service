@@ -1,0 +1,26 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Вакансія Data Engineer, опублікована 15 вересня, вимагає практичного досвіду з колонковими базами даних, такими як ClickHouse, Snowflake, Cassandra, BigQuery (багато таблиць із мільйонами записів і більше в кожній).\",\"sources\":[\"S1\"]},{\"text\":\"Інша вакансія Data Engineer від JustMarkets Tech, опублікована 15 вересня, у своїх вимогах не згадує колонкові бази даних.\",\"sources\":[\"S3\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Вакансія Data Engineer, опублікована 15 вересня, вимагає практичного досвіду з колонковими базами даних, такими як ClickHouse, Snowflake, Cassandra, BigQuery (багато таблиць із мільйонами записів і більше в кожній).",
+    "sources": [
+     "S1"
+    ]
+   },
+   {
+    "text": "Інша вакансія Data Engineer від JustMarkets Tech, опублікована 15 вересня, у своїх вимогах не згадує колонкові бази даних.",
+    "sources": [
+     "S3"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 4217,
+ "output_tokens": 714,
+ "latency_ms": 3814,
+ "stop_reason": "end_turn"
+}

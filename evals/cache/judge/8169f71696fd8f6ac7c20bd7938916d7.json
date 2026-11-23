@@ -1,0 +1,27 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"claims\":[{\"index\":1,\"supported\":true,\"reason\":\"S1 прямо зазначає, що Middle-спеціалісти найбільше заробляють у платформній, Mobile та Back-end розробці — $2500–2550.\"},{\"index\":2,\"supported\":true,\"reason\":\"S4: зарплати мідлів Swift утрималися на рівні $2800.\"},{\"index\":3,\"supported\":true,\"reason\":\"S6: найбільш високооплачувані мідли програмують на Go та Swift.\"}]}",
+ "data": {
+  "claims": [
+   {
+    "index": 1,
+    "supported": true,
+    "reason": "S1 прямо зазначає, що Middle-спеціалісти найбільше заробляють у платформній, Mobile та Back-end розробці — $2500–2550."
+   },
+   {
+    "index": 2,
+    "supported": true,
+    "reason": "S4: зарплати мідлів Swift утрималися на рівні $2800."
+   },
+   {
+    "index": 3,
+    "supported": true,
+    "reason": "S6: найбільш високооплачувані мідли програмують на Go та Swift."
+   }
+  ]
+ },
+ "input_tokens": 1962,
+ "output_tokens": 172,
+ "latency_ms": 2415,
+ "stop_reason": "end_turn"
+}

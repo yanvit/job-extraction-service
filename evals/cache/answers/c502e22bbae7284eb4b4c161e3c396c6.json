@@ -1,0 +1,20 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Медіанна зарплата розробників на Ruby on Rails у літньому опитуванні DOU 2026 (червень 2026) становила $4500.\",\"sources\":[\"S2\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Медіанна зарплата розробників на Ruby on Rails у літньому опитуванні DOU 2026 (червень 2026) становила $4500.",
+    "sources": [
+     "S2"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 4512,
+ "output_tokens": 376,
+ "latency_ms": 2374,
+ "stop_reason": "end_turn"
+}

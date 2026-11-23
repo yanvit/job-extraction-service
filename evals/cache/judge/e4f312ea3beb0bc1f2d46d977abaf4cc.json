@@ -1,0 +1,12 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"verdict\":\"correct\",\"reason\":\"The system names the same vacancy, Data Engineer djinni 848477, and lists the same column-oriented databases (ClickHouse, Snowflake, Cassandra, BigQuery). The extra details are plausible and do not contradict the reference.\"}",
+ "data": {
+  "verdict": "correct",
+  "reason": "The system names the same vacancy, Data Engineer djinni 848477, and lists the same column-oriented databases (ClickHouse, Snowflake, Cassandra, BigQuery). The extra details are plausible and do not contradict the reference."
+ },
+ "input_tokens": 929,
+ "output_tokens": 96,
+ "latency_ms": 2006,
+ "stop_reason": "end_turn"
+}

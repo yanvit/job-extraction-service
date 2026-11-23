@@ -1,0 +1,38 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Flutter Engineer (djinni-854141) бажано вимагає досвід state management на BLoC / Cubit, Riverpod або аналогах.\",\"sources\":[\"S1\"]},{\"text\":\"Flutter Developer (Middle/Senior, волонтерство) (djinni-690808) вимагає володіння технікою управління станом Provider, Riverpod або Bloc.\",\"sources\":[\"S2\"]},{\"text\":\"Middle Flutter Developer (djinni-855072) вимагає глибокого розуміння архітектурних паттернів BLoC, Provider, Riverpod тощо.\",\"sources\":[\"S3\"]},{\"text\":\"Senior Flutter developer (djinni-853382) вимагає впевнених знань фреймворку Bloc.\",\"sources\":[\"S4\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Flutter Engineer (djinni-854141) бажано вимагає досвід state management на BLoC / Cubit, Riverpod або аналогах.",
+    "sources": [
+     "S1"
+    ]
+   },
+   {
+    "text": "Flutter Developer (Middle/Senior, волонтерство) (djinni-690808) вимагає володіння технікою управління станом Provider, Riverpod або Bloc.",
+    "sources": [
+     "S2"
+    ]
+   },
+   {
+    "text": "Middle Flutter Developer (djinni-855072) вимагає глибокого розуміння архітектурних паттернів BLoC, Provider, Riverpod тощо.",
+    "sources": [
+     "S3"
+    ]
+   },
+   {
+    "text": "Senior Flutter developer (djinni-853382) вимагає впевнених знань фреймворку Bloc.",
+    "sources": [
+     "S4"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 3408,
+ "output_tokens": 622,
+ "latency_ms": 3239,
+ "stop_reason": "end_turn"
+}

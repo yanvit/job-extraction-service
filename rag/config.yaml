@@ -25,7 +25,7 @@ rerank:
 
 answer:                # ДЗ2, крок 3: RAG з джерелами
   model: claude-haiku-5-5        # id з кореневого config.yaml (ціни, structured output)
-  prompt: v1                     # prompts/rag/<version>/
+  prompt: v3                     # prompts/rag/<version>/ (історія — prompts/rag/CHANGELOG.md)
   retrieve_mode: hybrid_rerank
   retrieve_k: 8                  # кандидатів після rerank; у контекст ідуть, скільки влізе в бюджет
   context_budget_tokens: 2500    # бюджет на джерела (≈ 5–7 чанків structure-aware по ~350 токенів)

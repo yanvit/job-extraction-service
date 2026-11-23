@@ -1,0 +1,12 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"verdict\":\"correct\",\"reason\":\"Система назвала всі три вакансії з еталону: Flutter Developer (Middle/Senior, волонтерство), Flutter Engineer і Middle Flutter Developer. Вимоги до state management описано узгоджено з еталоном. Додаткова вакансія Senior Flutter developer правдоподібна, бо еталон каже «щонайменше», і нічому в ньому не суперечить.\"}",
+ "data": {
+  "verdict": "correct",
+  "reason": "Система назвала всі три вакансії з еталону: Flutter Developer (Middle/Senior, волонтерство), Flutter Engineer і Middle Flutter Developer. Вимоги до state management описано узгоджено з еталоном. Додаткова вакансія Senior Flutter developer правдоподібна, бо еталон каже «щонайменше», і нічому в ньому не суперечить."
+ },
+ "input_tokens": 1038,
+ "output_tokens": 150,
+ "latency_ms": 2652,
+ "stop_reason": "end_turn"
+}

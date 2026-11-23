@@ -1,0 +1,29 @@
+{
+  "n_questions": 29,
+  "by_category": {
+    "answerable": 17,
+    "trap": 5,
+    "no_answer": 7
+  },
+  "abstain_accuracy": 1.0,
+  "false_refusal_rate": 0.0,
+  "hallucination_rate_no_answer": 0.0,
+  "source_hit": 1.0,
+  "key_facts": 1.0,
+  "must_not_ok": 1.0,
+  "judge_correct": 0.955,
+  "judge_correct_trap": 0.8,
+  "faithfulness_claims": 0.959,
+  "faithful_answers": 0.909,
+  "n_claims": 49,
+  "refused_by_gate": 4,
+  "refused_by_model": 3,
+  "errors": 0,
+  "cost_per_1000_questions_usd": 0.55,
+  "judge_cost_run_usd": 0.421,
+  "latency_p50_ms": 2900,
+  "latency_p95_ms": 13090,
+  "avg_context_tokens": 2083,
+  "retrieval_recall@5": 1.0,
+  "failed_thresholds": []
+}

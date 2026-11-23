@@ -1,0 +1,38 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"Flutter Engineer (опубліковано 20 жовтня) містить досвід state management, бажано BLoC / Cubit, Riverpod або аналогами; формулювання «бажано» означає, що це не обов'язкова вимога.\",\"sources\":[\"S1\"]},{\"text\":\"Flutter Developer (Middle/Senior, волонтерство, опубліковано 29 жовтня 2024) вимагає володіння технікою управління станом (Provider, Riverpod, Bloc).\",\"sources\":[\"S2\"]},{\"text\":\"Middle Flutter Developer (опубліковано 26 жовтня) вимагає глибокого розуміння архітектурних паттернів (BLoC, Provider, Riverpod тощо).\",\"sources\":[\"S3\"]},{\"text\":\"Senior Flutter developer (опубліковано 14 жовтня) вимагає впевнених знань фреймворку Bloc; Riverpod у цій вакансії не згадано.\",\"sources\":[\"S4\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "Flutter Engineer (опубліковано 20 жовтня) містить досвід state management, бажано BLoC / Cubit, Riverpod або аналогами; формулювання «бажано» означає, що це не обов'язкова вимога.",
+    "sources": [
+     "S1"
+    ]
+   },
+   {
+    "text": "Flutter Developer (Middle/Senior, волонтерство, опубліковано 29 жовтня 2024) вимагає володіння технікою управління станом (Provider, Riverpod, Bloc).",
+    "sources": [
+     "S2"
+    ]
+   },
+   {
+    "text": "Middle Flutter Developer (опубліковано 26 жовтня) вимагає глибокого розуміння архітектурних паттернів (BLoC, Provider, Riverpod тощо).",
+    "sources": [
+     "S3"
+    ]
+   },
+   {
+    "text": "Senior Flutter developer (опубліковано 14 жовтня) вимагає впевнених знань фреймворку Bloc; Riverpod у цій вакансії не згадано.",
+    "sources": [
+     "S4"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 3125,
+ "output_tokens": 965,
+ "latency_ms": 4599,
+ "stop_reason": "end_turn"
+}

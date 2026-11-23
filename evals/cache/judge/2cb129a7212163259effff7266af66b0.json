@@ -1,0 +1,32 @@
+{
+ "model": "claude-opus-5-5",
+ "raw_text": "{\"claims\":[{\"index\":1,\"supported\":true,\"reason\":\"Джерело S2 прямо вимагає володіння технікою управління станом (Provider, Riverpod, Bloc).\"},{\"index\":2,\"supported\":true,\"reason\":\"Джерело S3 прямо вимагає глибокого розуміння архітектурних паттернів (BLoC, Provider, Riverpod тощо).\"},{\"index\":3,\"supported\":true,\"reason\":\"Джерело S4 прямо містить вимогу «Впевнені знання фреймворку Bloc».\"},{\"index\":4,\"supported\":true,\"reason\":\"Джерело S1 прямо містить вимогу досвіду зі state management, бажано BLoC / Cubit, Riverpod або аналогами.\"}]}",
+ "data": {
+  "claims": [
+   {
+    "index": 1,
+    "supported": true,
+    "reason": "Джерело S2 прямо вимагає володіння технікою управління станом (Provider, Riverpod, Bloc)."
+   },
+   {
+    "index": 2,
+    "supported": true,
+    "reason": "Джерело S3 прямо вимагає глибокого розуміння архітектурних паттернів (BLoC, Provider, Riverpod тощо)."
+   },
+   {
+    "index": 3,
+    "supported": true,
+    "reason": "Джерело S4 прямо містить вимогу «Впевнені знання фреймворку Bloc»."
+   },
+   {
+    "index": 4,
+    "supported": true,
+    "reason": "Джерело S1 прямо містить вимогу досвіду зі state management, бажано BLoC / Cubit, Riverpod або аналогами."
+   }
+  ]
+ },
+ "input_tokens": 3053,
+ "output_tokens": 258,
+ "latency_ms": 2834,
+ "stop_reason": "end_turn"
+}

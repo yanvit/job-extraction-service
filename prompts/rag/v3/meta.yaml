@@ -1,0 +1,5 @@
+version: v3
+date: 2026-11-23
+author: Vitalii
+summary: Як v2, але явно — у sources лише S-id, не id документа (v2 зламав t22); твердження про застарілість цитує і старе, і нове джерело.
+show_doc_id: true

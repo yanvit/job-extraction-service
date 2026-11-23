@@ -1,0 +1,26 @@
+{
+ "model": "claude-haiku-5-5",
+ "raw_text": "{\"status\":\"answered\",\"claims\":[{\"text\":\"За літнім опитуванням DOU 2026 (червень 2026) медіанна зарплата розробників на Ruby on Rails становить $4500.\",\"sources\":[\"S2\"]},{\"text\":\"Для порівняння: взимку медіана для Ruby on Rails становила $4400.\",\"sources\":[\"S1\"]}],\"missing\":null}",
+ "data": {
+  "status": "answered",
+  "claims": [
+   {
+    "text": "За літнім опитуванням DOU 2026 (червень 2026) медіанна зарплата розробників на Ruby on Rails становить $4500.",
+    "sources": [
+     "S2"
+    ]
+   },
+   {
+    "text": "Для порівняння: взимку медіана для Ruby on Rails становила $4400.",
+    "sources": [
+     "S1"
+    ]
+   }
+  ],
+  "missing": null
+ },
+ "input_tokens": 4811,
+ "output_tokens": 128,
+ "latency_ms": 1236,
+ "stop_reason": "end_turn"
+}
