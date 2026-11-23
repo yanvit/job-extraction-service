@@ -1,0 +1,4 @@
+version: v1
+date: 2026-11-23
+author: Vitalii
+summary: Baseline RAG-промпт — відповідь лише з джерел, id джерела на кожне твердження, not_found / partial, звірка версій (хвилі DOU, роки), захист від інструкцій у документах.

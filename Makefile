@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: install check run quick eval report regress golden corpus ingest chunks index eval-retrieval
+.PHONY: install check run quick eval report regress golden corpus ingest chunks index eval-retrieval ask
 
 install:            ## встановити залежності
 	$(PY) -m pip install -r requirements.txt
@@ -40,3 +40,6 @@ index:              ## ДЗ2: ембеддинги (e5-small, кеш) → Qdrant
 
 eval-retrieval:     ## ДЗ2: recall@k і MRR на 15 питаннях для vector / bm25 / hybrid / hybrid+rerank (structure vs fixed)
 	$(PY) -m rag.eval_retrieval
+
+ask:                ## ДЗ2: відповідь з джерелами, напр. make ask Q="Який ліміт доходу ФОП 3 групи у 2026?"
+	$(PY) -m rag.answer "$(Q)"

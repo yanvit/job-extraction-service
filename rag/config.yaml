@@ -22,3 +22,14 @@ fusion:
 rerank:
   model: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1   # мультимовний cross-encoder
   top_n: 20            # скільки кандидатів після fusion переоцінювати
+
+answer:                # ДЗ2, крок 3: RAG з джерелами
+  model: claude-haiku-5-5        # id з кореневого config.yaml (ціни, structured output)
+  prompt: v1                     # prompts/rag/<version>/
+  retrieve_mode: hybrid_rerank
+  retrieve_k: 8                  # кандидатів після rerank; у контекст ідуть, скільки влізе в бюджет
+  context_budget_tokens: 2500    # бюджет на джерела (≈ 5–7 чанків structure-aware по ~350 токенів)
+  min_rerank_score: 1.5          # «не знаю» до виклику моделі: найкращий чанк нижче порогу → not_found
+                                 # (на 15 питаннях з відповіддю мінімум 2.88; поза темою < −2; суміжні 0–1.1)
+  min_source_score: -2.0         # слабші за це чанки не беремо в контекст, навіть якщо бюджет є
+  max_tokens: 4096               # Haiku 5.5 спершу думає (thinking), і ці токени теж ідуть з max_tokens: на 1024 складне питання обрізалось
