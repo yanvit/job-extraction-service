@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: install check run quick eval report regress golden corpus ingest chunks index
+.PHONY: install check run quick eval report regress golden corpus ingest chunks index eval-retrieval
 
 install:            ## встановити залежності
 	$(PY) -m pip install -r requirements.txt
@@ -37,3 +37,6 @@ chunks: ingest      ## ДЗ2: structure-aware chunking + порівняння з
 
 index:              ## ДЗ2: ембеддинги (e5-small, кеш) → Qdrant; structure-aware + fixed для порівняння
 	$(PY) -m rag.index --chunks structure && $(PY) -m rag.index --chunks fixed
+
+eval-retrieval:     ## ДЗ2: recall@k і MRR на 15 питаннях для vector / bm25 / hybrid / hybrid+rerank (structure vs fixed)
+	$(PY) -m rag.eval_retrieval

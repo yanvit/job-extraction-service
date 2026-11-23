@@ -1,0 +1,122 @@
+# Питання для оцінки retrieval (ДЗ2, крок 2).
+#
+# Правильний чанк задано не через chunk_id, а правилом: «документ doc + у тексті є фраза contains».
+# Так одне й те саме питання працює і для structure-aware, і для fixed-чанків (у них різні id).
+# Кожну фразу перевірено вручну по тексту документа: вона і є відповіддю на питання.
+# Після першого прогону ці фрази шукали в УСІХ документах
+# і дописали пропущені правильні джерела (НААУ для q01/q02, Forbes для q10, ще дві Flutter-вакансії для q14).
+# Якщо підходить кілька правил, чанк релевантний, коли збігається хоча б одне.
+#
+# filter — фільтр за метаданими для конфігурації «+ filter» (те, що знав би користувач, задаючи питання).
+# trap — чим питання підступне (схожі документи, інша хвиля опитування, інша мова).
+
+questions:
+  - id: q01
+    q: Якою має бути мінімальна середньомісячна винагорода працівників резидента Дія Сіті?
+    relevant:
+      - {doc: law-diia-city, contains: "еквівалент 1200 євро"}
+      - {doc: kpmg-diia-city-2022, contains: "не менше 1200 євро"}
+      - {doc: unba-diia-city-resident, contains: "еквівалент 1200 євро"}
+    filter: {doc_type: [law, guide, article]}
+
+  - id: q02
+    q: Скільки щонайменше працівників і гіг-спеціалістів має бути в резидента Дія Сіті?
+    relevant:
+      - {doc: law-diia-city, contains: "не менше дев'яти осіб"}
+      - {doc: kpmg-diia-city-2022, contains: "не менше 9 осіб"}
+      - {doc: unba-diia-city-resident, contains: "не менше дев'яти осіб"}
+    filter: {doc_type: [law, guide, article]}
+
+  - id: q03
+    q: За якою ставкою ПДФО оподатковується зарплата працівника резидента Дія Сіті?
+    relevant:
+      - {doc: devua-diia-city-how-to, contains: "5% податку на доходи фізосіб"}
+      - {doc: kpmg-diia-city-2022, contains: "ПДФО за пільговою ставкою у розмірі 5%"}
+      - {doc: pwc-diia-city-2021, contains: "Ставка ПДФО для виплат спеціалістам"}
+    filter: {doc_type: [guide, article]}
+    trap: ставки ПДФО є також у документах про ФОП (5% єдиного податку — інше)
+
+  - id: q04
+    q: Через скільки часу компанія може повторно подати заяву на статус резидента Дія Сіті після його втрати?
+    relevant:
+      - {doc: prokadry-gig-fop, contains: "повних 12 календарних місяців"}
+      - {doc: law-diia-city, contains: "упродовж 12 календарних місяців, що передували"}
+    filter: {doc_type: [law, article]}
+
+  - id: q05
+    q: Чи гарантує статус резидента Дія Сіті бронювання працівників?
+    relevant:
+      - {doc: unba-diia-city-resident, contains: "резидентство не гарантує бронювання"}
+    filter: {doc_type: article}
+
+  - id: q06
+    q: Стартап якого віку може стати резидентом Дія Сіті без прибутку?
+    relevant:
+      - {doc: prokadry-gig-fop, contains: "не раніше ніж за 24 місяці"}
+      - {doc: kpmg-diia-city-2022, contains: "24 місяц"}
+      - {doc: devua-diia-city-how-to, contains: "24 місяц"}
+    filter: {doc_type: [article, guide]}
+
+  - id: q07
+    q: Який річний ліміт доходу ФОП 3 групи у 2026 році?
+    relevant:
+      - {doc: monobank-fop3-2026, contains: "10 091 049"}
+      - {doc: buhplatforma-fop3-2026, contains: "10 091 049"}
+    filter: {doc_type: [guide, article]}
+
+  - id: q08
+    q: Що станеться, якщо ФОП 3 групи перевищить ліміт доходу?
+    relevant:
+      - {doc: monobank-fop3-2026, contains: "із суми перевищення сплачується 15%"}
+      - {doc: buhplatforma-fop3-2026, contains: "15%"}
+    filter: {doc_type: [guide, article]}
+
+  - id: q09
+    q: Яка медіанна зарплата розробників у Тернополі за літнім опитуванням DOU 2026?
+    relevant:
+      - {doc: dou-salary-summer-2026, contains: "Тернополі та Черкасах"}
+    filter: {doc_type: report}
+    trap: зимове опитування теж має розділ «За містами» з іншими цифрами
+
+  - id: q10
+    q: У яких мов програмування найвищий третій квартиль зарплат за зимовим опитуванням DOU 2026?
+    relevant:
+      - {doc: dou-salary-winter-2026, contains: "Ruby, Go та Kotlin"}
+      - {doc: forbes-median-salary-2026, contains: "Ruby, Go та Kotlin"}   # стаття про ту саму зимову хвилю
+    filter: {doc_type: [report, article]}
+    trap: у літній хвилі інший список (Ruby, Go, Python, Kotlin і Rust)
+
+  - id: q11
+    q: Яка медіанна зарплата розробників на Ruby on Rails за літнім опитуванням DOU 2026?
+    relevant:
+      - {doc: dou-salary-summer-2026, contains: "лідирує Ruby on Rails — $4500"}
+    filter: {doc_type: report}
+    trap: у зимовій хвилі той самий розділ «За фреймворками» з $4400 (і згадкою $4500 за літо 2025)
+
+  - id: q12
+    q: До скількох доларів зросла медіанна зарплата IT-розробників за зимовим опитуванням DOU?
+    relevant:
+      - {doc: forbes-median-salary-2026, contains: "3450"}
+      - {doc: dou-salary-winter-2026, contains: "3450"}
+    filter: {doc_type: [report, article]}
+
+  - id: q13
+    q: Which Rust vacancy requires async services experience with Tokio, Axum or Actix?
+    relevant:
+      - {doc: djinni-854780, contains: "Tokio"}
+    filter: {doc_type: vacancy, stack: Rust}
+
+  - id: q14
+    q: Які Flutter-вакансії вимагають управління станом через Riverpod або Bloc?
+    relevant:                                  # три вакансії; для пошуку досить знайти будь-яку
+      - {doc: djinni-690808, contains: "Riverpod"}
+      - {doc: djinni-854141, contains: "Riverpod"}
+      - {doc: djinni-855072, contains: "Riverpod"}
+    filter: {doc_type: vacancy, stack: Flutter}
+
+  - id: q15
+    q: Which Data Engineer role needs hands-on experience with column-oriented databases like ClickHouse or BigQuery?
+    relevant:
+      - {doc: djinni-848477, contains: "column-oriented databases"}
+    filter: {doc_type: vacancy, stack: Data Engineer}
+    trap: ClickHouse згадується ще в кількох вакансіях (PHP, Senior Data Engineer AWS) лише як «плюс»

@@ -36,9 +36,20 @@ def matches(chunk: dict, flt: dict | None) -> bool:
     return True
 
 
+_QDRANT = None
+
+
+def shared_qdrant():
+    """Локальний Qdrant блокує папку на один клієнт, тож усі колекції в процесі ділять один."""
+    global _QDRANT
+    if _QDRANT is None:
+        _QDRANT = qdrant_client()
+    return _QDRANT
+
+
 class QdrantBackend:
     def __init__(self, kind: str):
-        self.client = qdrant_client()
+        self.client = shared_qdrant()
         self.name = collection_name(kind)
 
     def search(self, vec: np.ndarray, k: int, flt: dict | None) -> list[tuple[int, float]]:

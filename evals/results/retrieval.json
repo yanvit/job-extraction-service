@@ -1,0 +1,714 @@
+[
+  {
+    "config": "vector",
+    "chunks": "structure",
+    "mode": "vector",
+    "filter": false,
+    "ms_per_query": 58,
+    "mrr": 0.815,
+    "per_question": [
+      {
+        "id": "q01",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s002"
+      },
+      {
+        "id": "q02",
+        "first_rank": 2,
+        "top1": "devua-diia-city-how-to#s000"
+      },
+      {
+        "id": "q03",
+        "first_rank": 1,
+        "top1": "kpmg-diia-city-2022#s002"
+      },
+      {
+        "id": "q04",
+        "first_rank": 7,
+        "top1": "law-diia-city#s030"
+      },
+      {
+        "id": "q05",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s008"
+      },
+      {
+        "id": "q06",
+        "first_rank": 1,
+        "top1": "devua-diia-city-how-to#s001"
+      },
+      {
+        "id": "q07",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q08",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q09",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#s008"
+      },
+      {
+        "id": "q10",
+        "first_rank": 4,
+        "top1": "dou-salary-winter-2026#s017"
+      },
+      {
+        "id": "q11",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#s016"
+      },
+      {
+        "id": "q12",
+        "first_rank": 3,
+        "top1": "dou-salary-winter-2026#s004"
+      },
+      {
+        "id": "q13",
+        "first_rank": 1,
+        "top1": "djinni-854780#s001"
+      },
+      {
+        "id": "q14",
+        "first_rank": 1,
+        "top1": "djinni-854141#s002"
+      },
+      {
+        "id": "q15",
+        "first_rank": 1,
+        "top1": "djinni-848477#s001"
+      }
+    ],
+    "recall@1": 0.733,
+    "recall@3": 0.867,
+    "recall@5": 0.933,
+    "recall@10": 1.0
+  },
+  {
+    "config": "bm25",
+    "chunks": "structure",
+    "mode": "bm25",
+    "filter": false,
+    "ms_per_query": 1,
+    "mrr": 0.7,
+    "per_question": [
+      {
+        "id": "q01",
+        "first_rank": null,
+        "top1": "unba-diia-city-resident#s000"
+      },
+      {
+        "id": "q02",
+        "first_rank": 3,
+        "top1": "unba-diia-city-resident#s000"
+      },
+      {
+        "id": "q03",
+        "first_rank": 1,
+        "top1": "kpmg-diia-city-2022#s002"
+      },
+      {
+        "id": "q04",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#s001"
+      },
+      {
+        "id": "q05",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s008"
+      },
+      {
+        "id": "q06",
+        "first_rank": 3,
+        "top1": "devua-diia-city-how-to#s000"
+      },
+      {
+        "id": "q07",
+        "first_rank": 1,
+        "top1": "buhplatforma-fop3-2026#s000"
+      },
+      {
+        "id": "q08",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q09",
+        "first_rank": 2,
+        "top1": "dou-salary-summer-2026#s013"
+      },
+      {
+        "id": "q10",
+        "first_rank": 2,
+        "top1": "dou-salary-summer-2026#s005"
+      },
+      {
+        "id": "q11",
+        "first_rank": 3,
+        "top1": "dou-salary-summer-2026#s015"
+      },
+      {
+        "id": "q12",
+        "first_rank": 2,
+        "top1": "dou-salary-summer-2026#s013"
+      },
+      {
+        "id": "q13",
+        "first_rank": 1,
+        "top1": "djinni-854780#s001"
+      },
+      {
+        "id": "q14",
+        "first_rank": 1,
+        "top1": "djinni-690808#s002"
+      },
+      {
+        "id": "q15",
+        "first_rank": 1,
+        "top1": "djinni-848477#s001"
+      }
+    ],
+    "recall@1": 0.533,
+    "recall@3": 0.933,
+    "recall@5": 0.933,
+    "recall@10": 0.933
+  },
+  {
+    "config": "hybrid",
+    "chunks": "structure",
+    "mode": "hybrid",
+    "filter": false,
+    "ms_per_query": 33,
+    "mrr": 0.822,
+    "per_question": [
+      {
+        "id": "q01",
+        "first_rank": 1,
+        "top1": "law-diia-city#s013"
+      },
+      {
+        "id": "q02",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s002"
+      },
+      {
+        "id": "q03",
+        "first_rank": 1,
+        "top1": "kpmg-diia-city-2022#s002"
+      },
+      {
+        "id": "q04",
+        "first_rank": 2,
+        "top1": "law-diia-city#s030"
+      },
+      {
+        "id": "q05",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s008"
+      },
+      {
+        "id": "q06",
+        "first_rank": 2,
+        "top1": "devua-diia-city-how-to#s000"
+      },
+      {
+        "id": "q07",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q08",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q09",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#s001"
+      },
+      {
+        "id": "q10",
+        "first_rank": 3,
+        "top1": "dou-salary-summer-2026#s005"
+      },
+      {
+        "id": "q11",
+        "first_rank": 2,
+        "top1": "dou-salary-summer-2026#s015"
+      },
+      {
+        "id": "q12",
+        "first_rank": 2,
+        "top1": "dou-salary-summer-2026#s007"
+      },
+      {
+        "id": "q13",
+        "first_rank": 1,
+        "top1": "djinni-854780#s001"
+      },
+      {
+        "id": "q14",
+        "first_rank": 1,
+        "top1": "djinni-854141#s002"
+      },
+      {
+        "id": "q15",
+        "first_rank": 1,
+        "top1": "djinni-848477#s001"
+      }
+    ],
+    "recall@1": 0.667,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "recall@10": 1.0
+  },
+  {
+    "config": "hybrid_rerank",
+    "chunks": "structure",
+    "mode": "hybrid_rerank",
+    "filter": false,
+    "ms_per_query": 389,
+    "mrr": 0.9,
+    "per_question": [
+      {
+        "id": "q01",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s002"
+      },
+      {
+        "id": "q02",
+        "first_rank": 2,
+        "top1": "unba-diia-city-resident#s009"
+      },
+      {
+        "id": "q03",
+        "first_rank": 1,
+        "top1": "kpmg-diia-city-2022#s002"
+      },
+      {
+        "id": "q04",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#s001"
+      },
+      {
+        "id": "q05",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s008"
+      },
+      {
+        "id": "q06",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#s000"
+      },
+      {
+        "id": "q07",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q08",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q09",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#s008"
+      },
+      {
+        "id": "q10",
+        "first_rank": 2,
+        "top1": "dou-salary-summer-2026#s005"
+      },
+      {
+        "id": "q11",
+        "first_rank": 2,
+        "top1": "dou-salary-winter-2026#s012"
+      },
+      {
+        "id": "q12",
+        "first_rank": 1,
+        "top1": "forbes-median-salary-2026#s000"
+      },
+      {
+        "id": "q13",
+        "first_rank": 1,
+        "top1": "djinni-854780#s001"
+      },
+      {
+        "id": "q14",
+        "first_rank": 1,
+        "top1": "djinni-854141#s002"
+      },
+      {
+        "id": "q15",
+        "first_rank": 1,
+        "top1": "djinni-848477#s001"
+      }
+    ],
+    "recall@1": 0.8,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "recall@10": 1.0
+  },
+  {
+    "config": "hybrid_rerank + filter",
+    "chunks": "structure",
+    "mode": "hybrid_rerank",
+    "filter": true,
+    "ms_per_query": 339,
+    "mrr": 0.9,
+    "per_question": [
+      {
+        "id": "q01",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s002"
+      },
+      {
+        "id": "q02",
+        "first_rank": 2,
+        "top1": "unba-diia-city-resident#s009"
+      },
+      {
+        "id": "q03",
+        "first_rank": 1,
+        "top1": "kpmg-diia-city-2022#s002"
+      },
+      {
+        "id": "q04",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#s001"
+      },
+      {
+        "id": "q05",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#s008"
+      },
+      {
+        "id": "q06",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#s000"
+      },
+      {
+        "id": "q07",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q08",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#s002"
+      },
+      {
+        "id": "q09",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#s008"
+      },
+      {
+        "id": "q10",
+        "first_rank": 2,
+        "top1": "dou-salary-summer-2026#s005"
+      },
+      {
+        "id": "q11",
+        "first_rank": 2,
+        "top1": "dou-salary-winter-2026#s012"
+      },
+      {
+        "id": "q12",
+        "first_rank": 1,
+        "top1": "forbes-median-salary-2026#s000"
+      },
+      {
+        "id": "q13",
+        "first_rank": 1,
+        "top1": "djinni-854780#s001"
+      },
+      {
+        "id": "q14",
+        "first_rank": 1,
+        "top1": "djinni-854141#s002"
+      },
+      {
+        "id": "q15",
+        "first_rank": 1,
+        "top1": "djinni-848477#s001"
+      }
+    ],
+    "recall@1": 0.8,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "recall@10": 1.0
+  },
+  {
+    "config": "vector",
+    "chunks": "fixed",
+    "mode": "vector",
+    "filter": false,
+    "ms_per_query": 36,
+    "mrr": 0.767,
+    "per_question": [
+      {
+        "id": "q01",
+        "first_rank": 1,
+        "top1": "law-diia-city#f015"
+      },
+      {
+        "id": "q02",
+        "first_rank": 9,
+        "top1": "prokadry-gig-fop#f000"
+      },
+      {
+        "id": "q03",
+        "first_rank": 1,
+        "top1": "kpmg-diia-city-2022#f002"
+      },
+      {
+        "id": "q04",
+        "first_rank": 7,
+        "top1": "law-diia-city#f065"
+      },
+      {
+        "id": "q05",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#f011"
+      },
+      {
+        "id": "q06",
+        "first_rank": 1,
+        "top1": "devua-diia-city-how-to#f000"
+      },
+      {
+        "id": "q07",
+        "first_rank": 1,
+        "top1": "buhplatforma-fop3-2026#f001"
+      },
+      {
+        "id": "q08",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#f001"
+      },
+      {
+        "id": "q09",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#f007"
+      },
+      {
+        "id": "q10",
+        "first_rank": 4,
+        "top1": "dou-salary-summer-2026#f005"
+      },
+      {
+        "id": "q11",
+        "first_rank": 2,
+        "top1": "dou-salary-summer-2026#f000"
+      },
+      {
+        "id": "q12",
+        "first_rank": 2,
+        "top1": "dou-salary-winter-2026#f017"
+      },
+      {
+        "id": "q13",
+        "first_rank": 1,
+        "top1": "djinni-854780#f002"
+      },
+      {
+        "id": "q14",
+        "first_rank": 1,
+        "top1": "djinni-854141#f001"
+      },
+      {
+        "id": "q15",
+        "first_rank": 1,
+        "top1": "djinni-848477#f001"
+      }
+    ],
+    "recall@1": 0.667,
+    "recall@3": 0.8,
+    "recall@5": 0.867,
+    "recall@10": 1.0
+  },
+  {
+    "config": "hybrid",
+    "chunks": "fixed",
+    "mode": "hybrid",
+    "filter": false,
+    "ms_per_query": 38,
+    "mrr": 0.837,
+    "per_question": [
+      {
+        "id": "q01",
+        "first_rank": 10,
+        "top1": "law-diia-city#f014"
+      },
+      {
+        "id": "q02",
+        "first_rank": 5,
+        "top1": "prokadry-gig-fop#f000"
+      },
+      {
+        "id": "q03",
+        "first_rank": 1,
+        "top1": "kpmg-diia-city-2022#f002"
+      },
+      {
+        "id": "q04",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#f002"
+      },
+      {
+        "id": "q05",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#f011"
+      },
+      {
+        "id": "q06",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#f000"
+      },
+      {
+        "id": "q07",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#f001"
+      },
+      {
+        "id": "q08",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#f001"
+      },
+      {
+        "id": "q09",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#f007"
+      },
+      {
+        "id": "q10",
+        "first_rank": 4,
+        "top1": "dou-salary-summer-2026#f005"
+      },
+      {
+        "id": "q11",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#f015"
+      },
+      {
+        "id": "q12",
+        "first_rank": 1,
+        "top1": "forbes-median-salary-2026#f000"
+      },
+      {
+        "id": "q13",
+        "first_rank": 1,
+        "top1": "djinni-854780#f002"
+      },
+      {
+        "id": "q14",
+        "first_rank": 1,
+        "top1": "djinni-854141#f001"
+      },
+      {
+        "id": "q15",
+        "first_rank": 1,
+        "top1": "djinni-848477#f001"
+      }
+    ],
+    "recall@1": 0.8,
+    "recall@3": 0.8,
+    "recall@5": 0.933,
+    "recall@10": 1.0
+  },
+  {
+    "config": "hybrid_rerank",
+    "chunks": "fixed",
+    "mode": "hybrid_rerank",
+    "filter": false,
+    "ms_per_query": 393,
+    "mrr": 0.839,
+    "per_question": [
+      {
+        "id": "q01",
+        "first_rank": 2,
+        "top1": "unba-diia-city-resident#f012"
+      },
+      {
+        "id": "q02",
+        "first_rank": 2,
+        "top1": "unba-diia-city-resident#f012"
+      },
+      {
+        "id": "q03",
+        "first_rank": 1,
+        "top1": "kpmg-diia-city-2022#f002"
+      },
+      {
+        "id": "q04",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#f002"
+      },
+      {
+        "id": "q05",
+        "first_rank": 1,
+        "top1": "unba-diia-city-resident#f011"
+      },
+      {
+        "id": "q06",
+        "first_rank": 1,
+        "top1": "prokadry-gig-fop#f000"
+      },
+      {
+        "id": "q07",
+        "first_rank": 1,
+        "top1": "buhplatforma-fop3-2026#f001"
+      },
+      {
+        "id": "q08",
+        "first_rank": 1,
+        "top1": "monobank-fop3-2026#f001"
+      },
+      {
+        "id": "q09",
+        "first_rank": 1,
+        "top1": "dou-salary-summer-2026#f007"
+      },
+      {
+        "id": "q10",
+        "first_rank": 4,
+        "top1": "dou-salary-summer-2026#f005"
+      },
+      {
+        "id": "q11",
+        "first_rank": 3,
+        "top1": "dou-salary-winter-2026#f013"
+      },
+      {
+        "id": "q12",
+        "first_rank": 1,
+        "top1": "forbes-median-salary-2026#f000"
+      },
+      {
+        "id": "q13",
+        "first_rank": 1,
+        "top1": "djinni-854780#f002"
+      },
+      {
+        "id": "q14",
+        "first_rank": 1,
+        "top1": "djinni-690808#f001"
+      },
+      {
+        "id": "q15",
+        "first_rank": 1,
+        "top1": "djinni-848477#f001"
+      }
+    ],
+    "recall@1": 0.733,
+    "recall@3": 0.933,
+    "recall@5": 1.0,
+    "recall@10": 1.0
+  }
+]
