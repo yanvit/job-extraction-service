@@ -1,0 +1,24 @@
+# Налаштування індексу й пошуку (ДЗ2, крок 2)
+paths:
+  chunks: data/processed/chunks.jsonl            # structure-aware
+  chunks_fixed: data/processed/chunks_fixed.jsonl # базова лінія для порівняння
+  index_dir: data/index                          # Qdrant (локальний режим) + кеш ембеддингів
+
+embeddings:
+  model: intfloat/multilingual-e5-small          # 384-вимірні вектори, UA/EN, швидко на CPU
+  query_prefix: "query: "                        # e5 очікує префікси query:/passage:
+  passage_prefix: "passage: "
+  batch_size: 32
+
+bm25:
+  k1: 1.5
+  b: 0.75
+
+fusion:
+  method: rrf          # Reciprocal Rank Fusion: score = Σ 1 / (k + rank)
+  k: 60
+  candidates: 30       # скільки кандидатів брати з кожного пошуку перед об'єднанням
+
+rerank:
+  model: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1   # мультимовний cross-encoder
+  top_n: 20            # скільки кандидатів після fusion переоцінювати

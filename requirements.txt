@@ -6,3 +6,6 @@ anthropic>=0.40
 beautifulsoup4>=4.12
 lxml>=5.0
 pypdf>=4.0
+numpy>=1.26
+sentence-transformers>=3.0
+qdrant-client>=1.10
