@@ -12,11 +12,11 @@
 | без типової помилки пастки | 1.0 | ≥ 1.0 |
 | LLM-суддя: правильність | 0.955 | ≥ 0.8 |
 | LLM-суддя: правильність на пастках | 0.8 |  |
-| faithfulness: підтверджені твердження | 0.959 | ≥ 0.9 |
+| faithfulness: підтверджені твердження | 0.961 | ≥ 0.9 |
 | faithfulness: відповіді без жодного непідтвердженого | 0.909 |  |
 | retrieval recall@5 (hybrid+rerank) | 1.0 | ≥ 0.9 |
 
-Вартість відповідей: **$0.55 на 1000 питань** (відмови на порозі reranker-а безкоштовні: 4 з 29). Затримка p50 1566 мс, p95 10771 мс. Суддя за цей прогін: $0.421.
+Вартість відповідей: **$0.56 на 1000 питань** (відмови на порозі reranker-а безкоштовні: 4 з 29). Затримка p50 1677 мс, p95 10214 мс. Суддя за цей прогін: $0.4278.
 
 **Статус: ✅ усі пороги пройдено**
 
@@ -42,9 +42,9 @@
 | t16 | answerable | answered | ✅ | 1.00 | correct | 3/3 | buhplatforma-fop3-2026, monobank-fop3-2026 |
 | t17 | answerable | answered | ✅ | 1.00 | correct | 2/2 | dou-salary-winter-2026, forbes-median-salary-2026 |
 | t18 | trap | answered | ✅ | 1.00 | correct | 2/2 | kpmg-diia-city-2022, pwc-diia-city-2021, unba-diia-city-resident |
-| t19 | trap | answered | ✅ | 1.00 | correct | 2/2 | dou-salary-summer-2026 |
+| t19 | trap | answered | ✅ | 1.00 | correct | 3/3 | dou-salary-summer-2026 |
 | t20 | trap | answered | ✅ | 1.00 | correct | 1/1 | dou-salary-winter-2026 |
-| t21 | trap | partial | ✅ | 1.00 | incorrect | 2/2 | dou-salary-winter-2026 |
+| t21 | trap | partial | ✅ | 1.00 | incorrect | 3/3 | dou-salary-summer-2026, dou-salary-winter-2026 |
 | t22 | trap | answered | ✅ | 1.00 | correct | 4/4 | prokadry-gig-fop, pwc-diia-city-2021 |
 | n01 | no_answer | not_found (model) | — | — | — | — | — |
 | n02 | no_answer | not_found (model) | — | — | — | — | — |

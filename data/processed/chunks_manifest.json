@@ -9,7 +9,7 @@
   "chunks": 849,
   "quality": {
     "chunks": 849,
-    "median_chars": 812,
+    "median_chars": 811,
     "p95_chars": 1191,
     "max_tokens_approx": 431,
     "tiny_lt_200": 36,
@@ -52,12 +52,12 @@
     {
       "doc_id": "dou-salary-winter-2026",
       "chunks": 19,
-      "doc_sha256": "b085be921cda670d"
+      "doc_sha256": "fbe0212e502b25c9"
     },
     {
       "doc_id": "dou-salary-summer-2026",
       "chunks": 22,
-      "doc_sha256": "40fc49c7540dcaa6"
+      "doc_sha256": "0617dfbbc06dc9b5"
     },
     {
       "doc_id": "forbes-median-salary-2026",

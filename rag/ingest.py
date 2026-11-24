@@ -100,6 +100,10 @@ DROP_TAGS = {"script", "style", "noscript", "nav", "header", "footer", "aside", 
              "iframe", "figure", "img", "picture", "video", "select", "input"}
 INLINE_TAGS = {"a", "b", "strong", "i", "em", "span", "code", "sup", "sub", "u", "small", "mark", "abbr", "time", "label"}
 HEADINGS = {"h1": 1, "h2": 2, "h3": 3, "h4": 4, "h5": 4, "h6": 4}
+# Блоки всередині статті, які сайт міняє між завантаженнями: реклама журналу й підписки (Forbes) і теги під статтею
+# («Теми: …» у DOU). Інакше текст чанків «плаває», і в CI не збігаються ключі кешу LLM.
+# Не `c-post-text--ignore` цілком: у такому блоці Forbes лежить і «Матеріали по темі» — стоп-маркер кінця статті.
+DROP_CLASSES = re.compile(r"buy-magazine|subscribe|post-tags", re.IGNORECASE)
 
 
 def _inline_text(el: Tag) -> str:
@@ -122,7 +126,7 @@ def html_blocks(root: Tag) -> list[Block]:
             if isinstance(ch, NavigableString):
                 buf.append(str(ch))
                 continue
-            if not isinstance(ch, Tag) or ch.name in DROP_TAGS:
+            if not isinstance(ch, Tag) or ch.name in DROP_TAGS or DROP_CLASSES.search(" ".join(ch.get("class") or [])):
                 continue
             if ch.name == "br":
                 flush()

@@ -4,7 +4,7 @@
     "chunks": "structure",
     "mode": "vector",
     "filter": false,
-    "ms_per_query": 58,
+    "ms_per_query": 57,
     "mrr": 0.815,
     "per_question": [
       {
@@ -182,7 +182,7 @@
     "chunks": "structure",
     "mode": "hybrid",
     "filter": false,
-    "ms_per_query": 33,
+    "ms_per_query": 31,
     "mrr": 0.822,
     "per_question": [
       {
@@ -271,7 +271,7 @@
     "chunks": "structure",
     "mode": "hybrid_rerank",
     "filter": false,
-    "ms_per_query": 389,
+    "ms_per_query": 421,
     "mrr": 0.9,
     "per_question": [
       {
@@ -360,7 +360,7 @@
     "chunks": "structure",
     "mode": "hybrid_rerank",
     "filter": true,
-    "ms_per_query": 339,
+    "ms_per_query": 370,
     "mrr": 0.9,
     "per_question": [
       {
@@ -449,7 +449,7 @@
     "chunks": "fixed",
     "mode": "vector",
     "filter": false,
-    "ms_per_query": 36,
+    "ms_per_query": 28,
     "mrr": 0.767,
     "per_question": [
       {
@@ -538,7 +538,7 @@
     "chunks": "fixed",
     "mode": "hybrid",
     "filter": false,
-    "ms_per_query": 38,
+    "ms_per_query": 29,
     "mrr": 0.837,
     "per_question": [
       {
@@ -627,7 +627,7 @@
     "chunks": "fixed",
     "mode": "hybrid_rerank",
     "filter": false,
-    "ms_per_query": 393,
+    "ms_per_query": 350,
     "mrr": 0.839,
     "per_question": [
       {

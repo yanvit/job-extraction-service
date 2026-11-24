@@ -35,6 +35,7 @@ jobs:
           pip install -r requirements.txt pytest
 
       # Довідкові документи захищені авторським правом і не лежать у git — завантажуємо за manifest.
+      # Виняток — закон (public domain): він у git, бо zakon.rada.gov.ua недоступний з runner-а; fetch його пропускає.
       - name: Cache reference documents
         uses: actions/cache@v4
         with:
